@@ -3,7 +3,6 @@
 @import"grid-settings";
 // $visual-grid: true;
 @import "neat/neat";
-@import "neat/neat-helpers";
 
 //colors
 $primary-a:#505655;
@@ -12,20 +11,19 @@ $secondary-b:rgba(242,102,31,1);
 $secondary-c:rgba(75,145,9,1);
 
 $neutral-light:rgba(235,235,235,0.6);
-$gray:rgba(235,235,235,0.2);
 $black:#000;
-$bckgd:#fff;
+$bckgd:whtie;
 
 html{margin-top:0;}
 
 body {
-  @include media ($tablet){
-    font-size:em(14);
-  }
+  @include media ($tablet){font-size:14px;}
+  background:$bckgd;
   text-align: center;
-  font-family: 'Oxygen', sans-serif;
-  font-size:em(16);
+  font-family: 'Raleway', helvetica, sans-serif;
+  font-size:16px;
   font-weight:300;
+  letter-spacing:em(1.5);
   margin:0;
 }
 ::selection {
@@ -39,37 +37,46 @@ body {
 
 h1 {
   @include media($tablet){
-    font-size:em(46);}
+    text-shadow: 2px 3px 0 rgba($neutral-light, 1);}
   color:$black;
-  font-family: 'Radley', serif;
+  font-family: 'Radley', Georgia, serif;
   font-weight: 400;
   font-size:em(55);
-  letter-spacing: -1px;
-  text-shadow: 3px 4px 0 rgba($neutral-light, 1);
-  margin:2% 0 5% 0;
+  letter-spacing:em(-.3);
+  text-shadow: 2px 2px 1px darken($neutral-light, 30);
+  margin:em(20) 0 em(20) 0;
 }
 
 h2{
   color:$black;
-  font-weight:400;
-  font-size:em(33);
+  font-weight:600;
+  font-size:em(34);
   letter-spacing:em(2);
   margin:0;
-  text-shadow: 1px 2px 0 rgba($neutral-light, 1);  
+  text-shadow: 1px 2px 1px darken($neutral-light, 20);  
   text-transform: uppercase;
 }
 
 h3{
-  @include pad(default);
   color:$secondary-a;
+  font-size:em(32);
   font-weight:300;
   letter-spacing:em(2);
   text-transform: uppercase;
 }
 
+h4{
+  font-family: 'Radley';
+  font-weight:400;
+  font-size:em(26);
+  letter-spacing: em(0);
+  line-height:em(21);
+  margin:em(8) 0;
+  text-align:left;
+}
+
 p{
   font-size:em(18);
-  letter-spacing:em(1.5);
   line-height:em(33);
 }
 
@@ -78,28 +85,52 @@ a{
   color:rgba($secondary-a, 1);
 }
 
+a.normal{color:$black;}
+
+figcaption{
+  @include pad(default);
+  background:rgba($neutral-light, .2);
+  border-top:2px solid $black;
+  border-bottom:1px dotted $black;
+  font-size:em(14);
+  margin-bottom:em(50);
+  line-height:em(26);
+  text-align:left;
+}
+
+hr{
+  border: 0;
+  height: 1px;
+  background: $black;
+}
+
 //Structure
+section{
+  @include outer-container;
+}
 
 header{
-  @include pad(0 default);
-  margin-top:30px;
+  @include pad(30 default);
+  height:em(99);
+  margin-top:em(60);
 }
 
 nav{
+  background:none;
   text-align:center;
   ul{
     @include span-columns(12);
-    @include pad(1% default);
+    @include pad(em(12) default);
       list-style:none;
-      margin-bottom:4%;
-      border-bottom:1px solid $neutral-light;
+      margin-bottom:em(4);
+      margin-top:em(5);
+      border-bottom:1px dotted $black;
         li{
           @include inline-block;
-          @include pad(0 2%);
-          font-size:em(16);
-          letter-spacing:em(2);
+          @include pad(0 em(15));
           text-transform:uppercase;
             a{
+              letter-spacing:em(2);
               padding-bottom:em(10);
                 &:hover{
                   border-bottom:3px solid $secondary-a;}}}}
@@ -109,7 +140,9 @@ nav.secondary{
   @include span-columns(12);
   background:$black;
   height:45px;
+  position: fixed;
   text-align:left;
+  z-index: 1;
     ul{
       @include span-columns(10);
       @include shift(1);
@@ -117,128 +150,244 @@ nav.secondary{
       border-bottom:none;
       margin-top:0;
       li{
-        border-right: 1px dotted rgba($gray, .5);
+        border-right: 1px dotted rgba($neutral-light, .5);
         font-size:em(14);
+        font-weight: 400;
         height: 45px;
         margin-left:-4px;
           &:nth-of-type(1){
             margin:0;
-            border-left:1px dotted rgba($gray, .5);}
+            border-left:1px dotted rgba($neutral-light, .5);}
           &:last-of-type{
-            border-left:1px dotted rgba($gray, .5);
+            border-left:1px dotted rgba($neutral-light, .5);
             float:right;
             padding-top:em(8);}
-          &:hover{
-            background:rgba($gray, .3);}
+          &:hover, &:active{
+            background:rgba($neutral-light, .25);
+            -o-transition:.5s;
+            -ms-transition:.5s;
+            -moz-transition:.5s;
+            -webkit-transition:.5s;
+            transition:.5s;}
           a{
-            margin-top:em(15);
+            margin-top:em(16);
             display:block;
-            img{margin-top:em(-15);}
+            img{margin-top:em(-17);}
             &:hover{border-bottom:none;}}}}
 }
 
-section{
-  @include outer-container;
-  @include pad(default);
-}
-
 .single{
-  @include media($tablet){
-    @include shift(0);
-  }
+  @include media($tablet){@include shift(0);}
   @include span-columns(10);
   @include shift(1);
-  @include pad(em(0) em(0) em(30) em(0));
+  @include pad(em(70) em(0) em(70) em(0));
     @include media($tablet){@include span-columns(4);}
-  border-top:1px solid $neutral-light;
-    &:nth-of-type(1){border:none;}
+    border-top:1px dotted $black;
+      &:nth-of-type(1){border:none;}
+    p{
+      font-size:em(30);}
 }
 
 .column{
   @include media($tablet){@include span-columns (4);}
   @include span-columns(6);
   @include pad(default);
-  background:$gray;
-  margin-bottom:em(20);
+  // border-top:1px dotted darken($neutral-light, 30%);
     h3{margin:0;}
     p{text-align: left;}
+}
+
+.project-thumb{
+  @include media($tablet-large){
+    @include span-columns (4);}
+  @include span-columns(4);
+  border:1px dotted $black;
+  margin-top:em(25);
+  margin-bottom:em(40);
+    &:hover{
+      background:rgba($neutral-light, .3);
+      -o-transition:.9s;
+      -ms-transition:.9s;
+      -moz-transition:.9s;
+      -webkit-transition:.9s;
+      transition:.9s;}
+    img{
+      @include fill-parent;}
+    h4{text-align:center;}
+    p{
+      font-size:em(15);
+      line-height:em(23);
+      margin:em(8) 0 em(18) 0;}
+    a{color:$black;}
+}
+
+.project-description{
+  @include media($tablet-large){
+    @include span-columns(4);
+    position: relative;}
+  @include span-columns(3.5);
+  @include pad(em(10));
+  background:white;
+  border:1px dotted $black;
+  margin-bottom:em(28);
+  position:fixed;
+  text-align:left;
+  z-index: 2;
+    h3{
+      font-size:em(20);
+      letter-spacing:em(1);
+      line-height:em(22);
+      text-transform:none;
+    }
+    h4{
+      border-bottom:1px solid $black;
+      color:$black;
+      font-size:em(34);
+      font-weight:400;
+      margin:0;
+      padding-bottom:em(8)}
+    p{
+      font-size:em(16);
+      line-height:em(24);
+      letter-spacing:em(0);}
+}
+
+.project-gallery, {
+  @include media($tablet-large){@include span-columns(4);}
+  @include span-columns(8);
+  float:right;
+  img{
+    @include media($tablet-large){
+      @include fill-parent;}
+    width:em(650);
+    margin-bottom:em(30);}
 }
 
 footer{
   @include media($tablet){
     @include span-columns(4 of 4);}
   @include span-columns(12);
-    .single{
-      @include span-columns(12);
-      @include shift(0);
-      height:65px;
-        &:nth-of-type(1){
-          border-top:2px solid $black;
-          border-bottom:1px dotted $black;}}
+  background:rgba($neutral-light, .4);
+  border-top:2px solid $black;
+  height:80px;
     .column{
       @include media($tablet){
-        @include span-columns(4 of 4);}
+        @include span-columns(4 of 4);
+        border-left:none;
+        border-right:none;
+        border-bottom:1px dotted $black;}
       @include span-columns(6);
-      background:none;
-        &:nth-of-type(2){
-          @include media($tablet){
-            border-right:none;
-            border-bottom:1px dotted $black;}
-          border-right:1px dotted $black;}}
+        background:none;
+        border-top:none;
+        border-right:1px dotted $black;
+        height:78px;
+          &:nth-of-type(2){
+            border-right:none;}}
     h3{
       color:$secondary-a;
       display:inline-block;
-      padding:0;
       font-size:em(17);}
     p{
-      @include media($tablet){
-        font-size:em(16);}
       color:$primary-a;
       display:inline;
-      font-size:em(18);
-      line-height:em(18);}
+      font-size:em(16);}
     a{
-      margin:em(10);
-    }
+      margin:em(0) em(8);}
 }
 
 .welcome {
   -webkit-animation-name: welcome;
-  -webkit-animation-duration: .9s; }
+  -webkit-animation-duration: .7s; }
 
 @-webkit-keyframes welcome {
   from {
     -webkit-transform: scale(0);
-    opacity: 0;
-  }
-  50% {
-   -webkit-transform: scale(0);
-   opacity: 0;
-  }
-  82.5% {
-    -webkit-transform: scale(1.03);
-    -webkit-animation-timing-function: ease-out;
-    opacity: 1;
-  }
+    opacity: 0;}
+      60% {
+       -webkit-transform: scale(0);
+       opacity: 0;}
+      80% {
+        -webkit-transform: scale(1.03);
+        -webkit-animation-timing-function: ease-out;
+        opacity: 1;}
   to {
-    -webkit-transform: scale(1);
-  }
+    -webkit-transform: scale(1);}
 }
 
 //Image Crop
 
-.crop {
-  @include span-columns(8);
-  @include shift(2);
-  border:em(2) solid $neutral-light;
-  outline: 3px solid #fff;
-  outline-offset: -4px;
-  height:270px;
-  margin: 2%;
+.crop-circle {
+  @include border-top-radius(em(300));
+  @include border-bottom-radius(em(300));
+  @include border-left-radius(em(300));
+  @include border-right-radius(em(300));
+  border:em(5) solid #fff;
+  box-shadow: 0 0 0 4px ($secondary-c);
+  display:block;
+  height:em(220);
+  width:em(220);
   overflow: hidden;
+  margin:em(30) auto em(0) auto;
     img{
-      width:430px;
-      margin-top:-40px;}
+      // width:em(223);
+      // margin-left:em(-7);
+      width:em(400);
+      margin-top:em(-30);
+      margin-left:em(-100);}
+}
+
+//Elements
+
+.wrap{@include pad(em(20));}
+
+.relative{
+  position:relative;
+  display:block;
+  margin-top:em(40);
+}
+
+.arrow-right {
+  width: 0; 
+  height: 0; 
+  border-top: em(8) solid transparent;
+  border-bottom: em(8) solid transparent;
+  border-left: em(8) solid $secondary-a;
+  margin:0 em(5);
+  display:inline-block;
+  vertical-align: middle;
+}
+
+form{
+  input[type="text"],input[type="email"],input[type="tel"],input[type="url"],
+    textarea, input {
+      @include fill-parent;
+      @include pad(15px);
+      border:1px dotted $black;
+      margin:em(8) 0 em(8);
+      font-size: em(14);
+        &:focus{
+          border:1px solid $secondary-a;
+          outline:none;}}
+    label{
+      p{
+        font-size:em(14);
+        line-height:em(0);
+        text-align:left;
+        text-transform: uppercase;}}
+}
+
+button{
+  @include button (simple, $secondary-a);
+  border-radius:1px;
+  float:left;
+  margin-top:em(8);
+    p{
+      line-height: em(0);
+      font-size:em(20);
+      font-family: 'Oxygen';
+      font-weight: 300;
+      text-transform: uppercase;
+    }
 }
 
 //Sprites
@@ -250,21 +399,22 @@ footer{
   text-indent:-9999px;
   height:33px;
   width:33px;
+       &:hover{
+      opacity: .4;
+      -webkit-transition:opacity 0.4s;
+      -moz-transition:opacity 0.4s;
+      -o-transition:opacity 0.4s;}
 
 }
 .email{
   background-position:0 -33px;
-    &:hover{background-position:0 0;}
 }
 .github{
   background-position:99px -33px;;
-    &:hover{background-position:-33px 0;}
 }
 .twitter{
   background-position:-66px -33px;
-    &:hover{background-position:66px 0;}
 }
 .dribbble{
   background-position:-99px -33px;
-    &:hover{background-position:-99px 0;}
 }

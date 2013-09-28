@@ -8,6 +8,8 @@
     
     <link href='http://fonts.googleapis.com/css?family=Radley|Oxygen:400,300,700' rel='stylesheet' type='text/css'>
 
+    <link href='http://fonts.googleapis.com/css?family=Raleway:300,600' rel='stylesheet' type='text/css'>
+
     <!-- Use title if it's in the page YAML frontmatter -->
     <title><%= current_page.data.title || "The Middleman" %></title>
     
@@ -18,13 +20,13 @@
   <body class="<%= page_classes %>"> 
    <nav class="secondary">
       <ul>
-        <li><a href="../home.html">Home</a></li>
+        <li><a href="../index.html">Home</a></li>
         <li><a href="../contact.html">Contact</a></li>
         <li><a href="http://twitter.com/carolanncan"><img src="images/twitter.png" alt="Find me on Twitter"></a></li>
     </nav>
-   <section>
+   <section id="ParentContainer">
    <header>
-      <h2 class="welcome">Carolann Bonner</h2>
+      <h2>Carolann Bonner</h2>
       <nav>
         <ul>
           <li><%= link_to "My Work", "../work.html" %></li>
@@ -37,25 +39,19 @@
   
   </section>
 
-  <section>
-   <footer>
-     <div class="single">
-      <h3>See you later. </h3>
-      <p>Thanks for stopping by!</p>
-     </div>      
+  <footer>
     <div class="column">
       <h3>Built with: </h3>
       <p>Middleman - HTML5 - SASS - Bourbon</p> 
     </div>
-    <div class="column">
+
+  <div class="column">
       <h3>Follow</h3>
       <a href="contact.html" class="email sprite-socialmedia">Email</a>
       <a href="http://github.com/carolanncan" class="github sprite-socialmedia" >Github</a>
       <a href="http://twitter.com/carolanncan" class="twitter sprite-socialmedia">Twitter</a>
       <a href="http://dribbble.com/carolanncan" class="dribbble sprite-socialmedia">Dribbble</a>
-      
-    </div>
+  </div>
   </footer> 
-</section>
 </body>
 </html>
