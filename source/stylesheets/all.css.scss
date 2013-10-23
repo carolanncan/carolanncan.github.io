@@ -10,20 +10,18 @@ $secondary-a:rgba(199,122,0,1);
 $secondary-b:rgba(242,102,31,1);
 $secondary-c:rgba(75,145,9,1);
 
-$neutral-light:rgba(235,235,235,0.6);
+$neutral-light:rgba(235,235,235,1);
 $black:#000;
-$bckgd:whtie;
 
 html{margin-top:0;}
 
 body {
-  @include media ($tablet){font-size:14px;}
-  background:$bckgd;
+  @include media ($tablet){font-size:18px;}
   text-align: center;
-  font-family: 'Raleway', helvetica, sans-serif;
+  font-family: 'News Cycle', helvetica, sans-serif;
   font-size:16px;
   font-weight:300;
-  letter-spacing:em(1.5);
+  letter-spacing:em(3);
   margin:0;
 }
 ::selection {
@@ -36,72 +34,99 @@ body {
 //Typography
 
 h1 {
-  @include media($tablet){
-    text-shadow: 2px 3px 0 rgba($neutral-light, 1);}
+  @include media($mobile){
+    font-size:em(30);
+    letter-spacing:em(-.4);
+    line-height:em(20);
+  }
   color:$black;
   font-family: 'Radley', Georgia, serif;
   font-weight: 400;
   font-size:em(55);
   letter-spacing:em(-.3);
-  text-shadow: 2px 2px 1px darken($neutral-light, 30);
-  margin:em(20) 0 em(20) 0;
+  margin:0 auto em(20) auto;
 }
 
 h2{
-  color:$black;
-  font-weight:600;
+  color:$secondary-a;
+  font-weight:400;
   font-size:em(34);
-  letter-spacing:em(2);
   margin:0;
-  text-shadow: 1px 2px 1px darken($neutral-light, 20);  
   text-transform: uppercase;
 }
 
 h3{
-  color:$secondary-a;
-  font-size:em(32);
+  color:darken($neutral-light, 20%);
+  font-family:'News Cycle' sans-serif, helvetica;
+  font-size:em(16);
   font-weight:300;
   letter-spacing:em(2);
+  margin:em(14) auto em(24) auto;
   text-transform: uppercase;
 }
 
 h4{
-  font-family: 'Radley';
+  font-family: 'Radley', Georgia, serif;
   font-weight:400;
-  font-size:em(26);
+  font-size:em(44);
   letter-spacing: em(0);
   line-height:em(21);
-  margin:em(8) 0;
-  text-align:left;
+  margin:0;
+}
+
+h5{
+  @include media($mobile){@include pad(default);}
+  @include pad(default em(80));
+  color:darken($neutral-light, 50%);
+  font-family: 'Oxygen', helvetica, sans-serif;
+  font-size:em(24);
+  font-weight:300;
+  letter-spacing:em(2);
+  line-height:em(30);
+  margin:0;
 }
 
 p{
-  font-size:em(18);
-  line-height:em(33);
+  font-family:'Oxygen', helvetica, sans-serif;
+  font-weight: 300;
+  font-size:em(16);
+  letter-spacing:em(1);
+  line-height:em(34);
 }
 
 a{
   text-decoration: none;
   color:rgba($secondary-a, 1);
+  font-weight:normal;
 }
 
 a.normal{color:$black;}
 
+figure{
+  margin:em(20) auto;
+}
+
 figcaption{
+  @include media($tablet-large){
+    @include fill-parent;}
   @include pad(default);
-  background:rgba($neutral-light, .2);
-  border-top:2px solid $black;
-  border-bottom:1px dotted $black;
-  font-size:em(14);
-  margin-bottom:em(50);
-  line-height:em(26);
-  text-align:left;
+  background:lighten($neutral-light, 5%);
+  border-top:1px solid darken($neutral-light, 4%);
+  border-bottom:1px solid darken($neutral-light, 4%);
+  margin:em(34) auto;
 }
 
 hr{
   border: 0;
   height: 1px;
-  background: $black;
+  width:30%;
+  background: $neutral-light;
+}
+
+ul{
+  display:inline-block;
+  list-style:circle;
+  text-align:left;
 }
 
 //Structure
@@ -110,99 +135,99 @@ section{
 }
 
 header{
-  @include pad(30 default);
   height:em(99);
-  margin-top:em(60);
 }
 
 nav{
+  @include pad(em(80) 0);
   background:none;
-  text-align:center;
+  z-index:1;
   ul{
     @include span-columns(12);
     @include pad(em(12) default);
       list-style:none;
-      margin-bottom:em(4);
-      margin-top:em(5);
-      border-bottom:1px dotted $black;
+      border-bottom:1px solid darken($neutral-light, 4%);
+      margin-bottom:em(40);
+      text-align:center;
         li{
           @include inline-block;
           @include pad(0 em(15));
           text-transform:uppercase;
             a{
-              letter-spacing:em(2);
+              letter-spacing:em(3);
               padding-bottom:em(10);
+              font-weight:300;
                 &:hover{
                   border-bottom:3px solid $secondary-a;}}}}
 }
 
 nav.secondary{
   @include span-columns(12);
-  background:$black;
+  @include pad(0);
+  background:lighten($neutral-light, 5%);
+  border-bottom:1px solid darken($neutral-light, 4%);
   height:45px;
-  position: fixed;
-  text-align:left;
-  z-index: 1;
+  margin-top:0;
+  z-index: 2;
     ul{
       @include span-columns(10);
       @include shift(1);
       @include pad(0);
       border-bottom:none;
       margin-top:0;
+      text-align:left;
       li{
-        border-right: 1px dotted rgba($neutral-light, .5);
+        border-right: 1px solid darken($neutral-light, 8%);
         font-size:em(14);
         font-weight: 400;
         height: 45px;
         margin-left:-4px;
           &:nth-of-type(1){
             margin:0;
-            border-left:1px dotted rgba($neutral-light, .5);}
+            border-left:1px solid darken($neutral-light, 4%);}
           &:last-of-type{
-            border-left:1px dotted rgba($neutral-light, .5);
+            border-left:1px solid darken($neutral-light, 4%);
             float:right;
             padding-top:em(8);}
           &:hover, &:active{
-            background:rgba($neutral-light, .25);
+            background:darken($neutral-light, 1%);
             -o-transition:.5s;
             -ms-transition:.5s;
             -moz-transition:.5s;
             -webkit-transition:.5s;
             transition:.5s;}
           a{
-            margin-top:em(16);
+            @include media($tablet){margin-top:em(9);}
+            color:lighten($black, 50%);
+            margin-top:em(14);
             display:block;
+            font-weight:700;
             img{margin-top:em(-17);}
             &:hover{border-bottom:none;}}}}
 }
 
 .single{
   @include media($tablet){@include shift(0);}
+  @include media($mobile){@include pad(em(20) 0)}
   @include span-columns(10);
   @include shift(1);
-  @include pad(em(70) em(0) em(70) em(0));
+  @include pad(em(70) em(0));
     @include media($tablet){@include span-columns(4);}
-    border-top:1px dotted $black;
+    border-top: 4px double lighten($black, 70%);
       &:nth-of-type(1){border:none;}
-    p{
-      font-size:em(30);}
 }
 
 .column{
   @include media($tablet){@include span-columns (4);}
-  @include span-columns(6);
-  @include pad(default);
-  // border-top:1px dotted darken($neutral-light, 30%);
-    h3{margin:0;}
-    p{text-align: left;}
+  @include span-columns(5.8);
+  margin-bottom:em(80);
 }
 
 .project-thumb{
   @include media($tablet-large){
     @include span-columns (4);}
-  @include span-columns(4);
-  border:1px dotted $black;
-  margin-top:em(25);
+  @include span-columns(3.9);
+  border:1px solid darken($neutral-light, 4%);
   margin-bottom:em(40);
     &:hover{
       background:rgba($neutral-light, .3);
@@ -212,87 +237,76 @@ nav.secondary{
       -webkit-transition:.9s;
       transition:.9s;}
     img{
-      @include fill-parent;}
-    h4{text-align:center;}
+      @include fill-parent;
+      margin-bottom:em(8);}
+    h4{
+      font-size:em(34);}
     p{
-      font-size:em(15);
       line-height:em(23);
-      margin:em(8) 0 em(18) 0;}
-    a{color:$black;}
+    }
 }
 
 .project-description{
   @include media($tablet-large){
     @include span-columns(4);
-    position: relative;}
-  @include span-columns(3.5);
-  @include pad(em(10));
-  background:white;
-  border:1px dotted $black;
-  margin-bottom:em(28);
-  position:fixed;
-  text-align:left;
-  z-index: 2;
+    @include shift(0);}
+  @include media($mobile){
+    @include pad(0);
+  }
+  @include span-columns(10);
+  @include shift(1);
+  @include pad(0 em(60) em(30));
+  border-bottom: 4px double lighten($black, 70%);
+  margin-bottom: em(80);
     h3{
-      font-size:em(20);
-      letter-spacing:em(1);
-      line-height:em(22);
-      text-transform:none;
-    }
-    h4{
-      border-bottom:1px solid $black;
-      color:$black;
-      font-size:em(34);
-      font-weight:400;
-      margin:0;
-      padding-bottom:em(8)}
-    p{
-      font-size:em(16);
-      line-height:em(24);
-      letter-spacing:em(0);}
+      text-transform: none;}
 }
 
 .project-gallery, {
-  @include media($tablet-large){@include span-columns(4);}
-  @include span-columns(8);
-  float:right;
+  @include media($tablet-large){
+    @include span-columns(4);
+    @include shift(0);}
+  @include span-columns(10);
+  @include shift(1);
   img{
     @include media($tablet-large){
       @include fill-parent;}
-    width:em(650);
-    margin-bottom:em(30);}
+    width:em(650);}
 }
 
 footer{
-  @include media($tablet){
-    @include span-columns(4 of 4);}
   @include span-columns(12);
-  background:rgba($neutral-light, .4);
-  border-top:2px solid $black;
-  height:80px;
+  background:lighten($neutral-light, 4%);
+  border-top:1px solid darken($neutral-light, 4%);
+  min-height:150px;
     .column{
-      @include media($tablet){
+      @include media($tablet-large){
         @include span-columns(4 of 4);
-        border-left:none;
-        border-right:none;
-        border-bottom:1px dotted $black;}
+        @include pad(em(50) em(10));
+        border-bottom:1px solid darken($neutral-light, 4%);}
+      @include media($mobile){
+        @include pad(em(35) em(0));}
       @include span-columns(6);
+      @include pad(em(60));
         background:none;
-        border-top:none;
-        border-right:1px dotted $black;
-        height:78px;
+        border-right:1px solid darken($neutral-light, 8%);
+        height:150px;
+        margin-bottom:0;
           &:nth-of-type(2){
             border-right:none;}}
-    h3{
-      color:$secondary-a;
-      display:inline-block;
-      font-size:em(17);}
-    p{
-      color:$primary-a;
-      display:inline;
-      font-size:em(16);}
-    a{
-      margin:em(0) em(8);}
+      h3{
+        @include media($mobile){
+          display:block;
+          margin:0 0 em(10) 0;}
+        color:$secondary-a;
+        display:inline-block;
+        font-size:em(16);
+        font-weight:300;}
+      p{
+        @include media($mobile){margin-top:0;}
+        color:$primary-a;
+        display:inline;}
+      a{margin:em(0) em(8);}
 }
 
 .welcome {
@@ -317,74 +331,58 @@ footer{
 //Image Crop
 
 .crop-circle {
+  @include media($mobile){
+    height:em(200);
+    width:em(200);
+  }
   @include border-top-radius(em(300));
   @include border-bottom-radius(em(300));
   @include border-left-radius(em(300));
   @include border-right-radius(em(300));
-  border:em(5) solid #fff;
-  box-shadow: 0 0 0 4px ($secondary-c);
+  border:em(10) solid #fff;
+  box-shadow: 0 0 0 1px ($neutral-light);
   display:block;
-  height:em(220);
-  width:em(220);
+  height:em(440);
+  width:em(440);
   overflow: hidden;
-  margin:em(30) auto em(0) auto;
+  margin:em(0) auto em(50) auto;
     img{
-      // width:em(223);
-      // margin-left:em(-7);
-      width:em(400);
-      margin-top:em(-30);
-      margin-left:em(-100);}
+      margin-top:em(0);
+      // margin-left:em(-10);
+    }
 }
 
 //Elements
 
-.wrap{@include pad(em(20));}
-
-.relative{
-  position:relative;
-  display:block;
-  margin-top:em(40);
-}
-
-.arrow-right {
-  width: 0; 
-  height: 0; 
-  border-top: em(8) solid transparent;
-  border-bottom: em(8) solid transparent;
-  border-left: em(8) solid $secondary-a;
-  margin:0 em(5);
-  display:inline-block;
-  vertical-align: middle;
-}
+.wrap{@include pad(auto em(45));}
 
 form{
   input[type="text"],input[type="email"],input[type="tel"],input[type="url"],
     textarea, input {
       @include fill-parent;
-      @include pad(15px);
-      border:1px dotted $black;
-      margin:em(8) 0 em(8);
-      font-size: em(14);
+      @include pad(em(8) 0);
+      border-top:none;
+      border-right:none;
+      border-left:none;
+      border-bottom:1px solid darken($neutral-light, 4%);
+      margin:em(10) 0 0 0;
+      font-size: em(16);
+      letter-spacing:em(1);
         &:focus{
-          border:1px solid $secondary-a;
+          border-bottom:1px solid $secondary-a;
           outline:none;}}
-    label{
-      p{
-        font-size:em(14);
-        line-height:em(0);
-        text-align:left;
-        text-transform: uppercase;}}
 }
 
 button{
   @include button (simple, $secondary-a);
   border-radius:1px;
   float:left;
-  margin-top:em(8);
+  margin:em(30) 0;
     p{
+      letter-spacing:em(3);
       line-height: em(0);
-      font-size:em(20);
-      font-family: 'Oxygen';
+      font-size:em(21);
+      font-family: 'News Cycle' sans-serif;
       font-weight: 300;
       text-transform: uppercase;
     }

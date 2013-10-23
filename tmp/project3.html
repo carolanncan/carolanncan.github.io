@@ -1,4 +1,13 @@
-<!-- CHANGES -->
+<link href="/stylesheets/normalize.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="/stylesheets/sass/all.css" media="screen" rel="stylesheet" type="text/css" /> <script src="/all.js" type="text/javascript"></script>
+
+
+<html>
+<head>
+<title>Carolann Bonner</title>
+</head>
+
+<body>
 
 <!doctype html>
 <html>
@@ -38,14 +47,15 @@
     </script>
 
     <!-- Use title if it's in the page YAML frontmatter -->
-    <title><%= current_page.data.title || "Carolann Bonner" %></title>
+    <title>Zeus</title>
     
-    <%= stylesheet_link_tag "normalize", "all" %>
-    <%= javascript_include_tag  "all" %>
+    <link href="/stylesheets/normalize.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="/stylesheets/all.css" media="screen" rel="stylesheet" type="text/css" />
+    <script src="/javascripts/all.js" type="text/javascript"></script>
   </head>
   
 
-  <body class="<%= page_classes %>"> 
+  <body class="project3"> 
    <nav class="secondary">
       <ul>
         <li><a href="../index.html">Home</a></li>
@@ -57,15 +67,52 @@
       <nav>
         <h2><a href="../index.html" class="normal">Carolann Bonner</a></h2>
         <ul>
-          <li><%= link_to "My Work", "../work.html" %></li>
-          <li><%= link_to "About Me", "../about.html" %></li>
+          <li><a href="work.html">My Work</a></li>
+          <li><a href="about.html">About Me</a></li>
         </ul>
       </nav> 
     </header>
 
   <section id="ParentContainer">
 
-    <%= yield %>
+      <section>
+        <div class="project-description wrap">
+	<h4>Zeus</h4>
+	<h3>Measuring team workload in a friendly way!</h3>
+	<hr>
+	<p>In Greek mythology, Zeus was the god of the sky, the god of order, and the god of justice. With Zeus, you can easily set your own bandwidth, see who is available to assist on other projects or who is overloaded and needs help.</p>
+</div>
+
+<div class="project-gallery">
+	<figure><img src="images/portfolio/zeus/01.png">
+	</figure>
+	<figure>
+		<img src="images/portfolio/zeus/02.png"></figure>
+		<figcaption><p>I created a <strong>custom logo and icon set</strong> to give the interface a little personality. I think possibly everyone on the web has created their own weather icon set by now. This set certainly isn't ground-breaking, but it's ours!</p>
+		</figcaption>
+	<figure>
+		<img src="images/portfolio/zeus/03.png">
+	</figure>
+	<figure>
+		<img src="images/portfolio/zeus/07.png"></figure>
+		<figcaption><p>The user sets their bandwidth by using a slider and can type in optional notes for each day.</p></figcaption>		
+	<figure>
+	<figure>
+		<img src="images/portfolio/zeus/04.png"></figure>
+	<figure>
+		<figcaption><p>This screen shows you a weekly forecast for the interactive team. You can see each team member's individual workload represented by their weather icon, and an aggregate icon of the whole team at the top of each day.</p></figcaption>
+		</figure>
+		<img src="images/portfolio/zeus/05.png"></figure>
+	<figure>
+		<figcaption><p>You can filter your availability results by user, team, client, or by skillset/capability of team members.</p></figcaption>
+		</figure>
+
+</div>
+		<div class="single">
+			<h2><a href="work.html">Back to gallery</a></h2>
+		</div>
+  </section>
+
   
   </section>
 
@@ -85,4 +132,5 @@
   </footer> 
 
 </body>
+</html>
 </html>

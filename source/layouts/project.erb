@@ -1,0 +1,24 @@
+---
+layout: "project"
+---
+<%= stylesheet_link_tag "normalize", "sass/all" %>
+ <%= javascript_include_tag  "/all" %>
+
+
+<html>
+<head>
+<title>Carolann Bonner</title>
+</head>
+
+<body>
+
+<% wrap_layout :layout do %>
+  <section>
+    <%= yield %>
+		<div class="single">
+			<h2><a href="work.html">Back to gallery</a></h2>
+		</div>
+  </section>
+<% end %>
+
+</html>
