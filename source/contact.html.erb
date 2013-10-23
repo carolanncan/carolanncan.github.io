@@ -4,24 +4,30 @@ title: Home
 <section>
 
 <div class="column">
-<h4>Send me an email - let's chat!</h4>
-<form action="http://getsimpleform.com/messages?form_api_token=237502a9a09e98a55e87d60fbb742ba3" method="post">
-  <input type='hidden' name='redirect_to' value='http://radiant-bastion-9431.herokuapp.com/' />
-<!--   <label><p>Name</p></label>
- -->  <input name="name" type="text" placeholder="Name">
-<!--   <label><p>Email</p></label>
- -->  <input name="email" type="email" placeholder="Email">
-<!--   <label><p>Message</p></label>
- -->  <textarea name="message" placeholder="Message here"></textarea>
-  <button id="submit" name="submit" type="submit" value="Submit"><p>Send</p></button>
-</form>
+<h4>Send a message -<br />let's chat!</h4>
 
-</div><!--column1-->
+<form action="http://getsimpleform.com/messages?form_api_token=237502a9a09e98a55e87d60fbb742ba3" method="post">
+	<input type='hidden' name='redirect_to' value='http://radiant-bastion-9431.herokuapp.com/' />
+	<!--<label><p>Name</p></label>-->
+	<input name="name" type="text" placeholder="Name">
+	<!--<label><p>Email</p></label>-->
+	<input name="email" type="email" placeholder="Email">
+	<!--<label><p>Message</p></label>-->
+	<textarea name="message" placeholder="Your message here"></textarea>
+	  
+	<button id="submit" name="submit" type="submit" value="Submit">
+	  <p>Send</p>
+	</button>
+
+</form>
+</div>
 
 <div class="column">
   <figure>
-      <img src="images/teambonner.jpg" height="468" width="400">
-      <figcaption>Me and my husband, George. We're cool.</figcaption>
+  	<div class="crop-circle">
+      <img src="images/teambonner.png" width="100%">
+    </div>
+      <figcaption><p>This is me and my husband, George. We're cool.</p></figcaption>
   </figure>
 </div><!--column2-->
 </section>
