@@ -1,31 +1,33 @@
 @charset "utf-8";
+
 @import "bourbon/bourbon";
 @import "grid-settings";
-// $visual-grid: true;
 @import "neat/neat";
+@import "normalize";
+
 @import "partials/variables";
 @import "partials/typography";
 @import "partials/structure";
 
-
-html{margin-top:0;}
-
-body {
-  @include media ($tablet){font-size:18px;}
-  text-align: center;
+html {
   font-family: 'News Cycle', helvetica, sans-serif;
-  font-size:16px;
   font-weight:300;
-  letter-spacing:em(3);
-  margin:0;
+
+  @include media ($tablet){
+    font-size: 112.5%;
+  }
 }
 
-::selection {
-  background: rgba($secondary-c, 0.5); /* Safari */
-  }
+.ltr-sp-3 {
+  letter-spacing: 0.1875em;
+}
 
-::-moz-selection {
-  background: #ffb7b7; /* Firefox */
+.center {
+  text-align: center;
+}
+
+::selection, ::-moz-selection {
+  background: rgba($secondary-c, 0.5);
 }
 
 .wrap{
@@ -34,66 +36,50 @@ body {
 
 .welcome {
   -webkit-animation-name: welcome;
-  -webkit-animation-duration: .7s; }
+-webkit-animation-duration: .7s; }
 
 @-webkit-keyframes welcome {
   from {
     -webkit-transform: scale(0);
-    opacity: 0;}
-      60% {
-       -webkit-transform: scale(0);
-       opacity: 0;}
-      80% {
-        -webkit-transform: scale(1.03);
-        -webkit-animation-timing-function: ease-out;
-        opacity: 1;}
+  opacity: 0;}
+  60% {
+    -webkit-transform: scale(0);
+  opacity: 0;}
+  80% {
+    -webkit-transform: scale(1.03);
+    -webkit-animation-timing-function: ease-out;
+  opacity: 1;}
   to {
-    -webkit-transform: scale(1);}
+  -webkit-transform: scale(1);}
 }
 
 //Image Crop
-
 .crop-circle {
-  @include media($mobile){
-    height:em(200);
-    width:em(200);}
-      @include border-top-radius(em(300));
-      @include border-bottom-radius(em(300));
-      @include border-left-radius(em(300));
-      @include border-right-radius(em(300));
-      border:em(10) solid #fff;
-      box-shadow: 0 0 0 3px darken($neutral-light, 10%);
-      display:block;
-      height:em(440);
-      width:em(440);
-      overflow: hidden;
-      margin:em(0) auto;
-        img{
-          @include media($mobile){
-            margin-top:em(-20);
-            margin-left:em(-15);}
-          margin-top:em(-30);
-          margin-left:em(-40);}
+  max-width: 100%;
+  display: block;
+  box-shadow: 0 0 0 3px darken($neutral-light, 10%);
+  overflow: hidden;
+  border: em(10) solid #fff;
+  border-radius: 50%;
 }
-
 
 //Elements
 
 form{
   input[type="text"],input[type="email"],input[type="tel"],input[type="url"],
-    textarea, input {
-      @include fill-parent;
-      @include pad(em(8) 0);
-      border-top:none;
-      border-right:none;
-      border-left:none;
-      border-bottom:1px solid darken($neutral-light, 4%);
-      margin:em(10) 0 0 0;
-      font-size: em(16);
-      letter-spacing:em(1);
-        &:focus{
-          border-bottom:1px solid $secondary-a;
-          outline:none;}}
+  textarea, input {
+    @include fill-parent;
+    @include pad(em(8) 0);
+    border-top:none;
+    border-right:none;
+    border-left:none;
+    border-bottom:1px solid darken($neutral-light, 4%);
+    margin:em(10) 0 0 0;
+    font-size: em(16);
+    letter-spacing:em(1);
+    &:focus{
+      border-bottom:1px solid $secondary-a;
+  outline:none;}}
 }
 
 button{
@@ -101,11 +87,11 @@ button{
   border-radius:8px;
   float:left;
   margin:em(30) 0;
-    p{
-      line-height: em(0);
-      font-size:em(23);
-      font-family: 'News Cycle' sans-serif;
-      font-weight: 300;}
+  p{
+    line-height: em(0);
+    font-size:em(23);
+    font-family: 'News Cycle' sans-serif;
+  font-weight: 300;}
 }
 
 //Sprites
@@ -118,11 +104,11 @@ button{
   text-indent:-9999px;
   height:33px;
   width:33px;
-       &:hover{
-      opacity: .4;
-      -webkit-transition:opacity 0.4s;
-      -moz-transition:opacity 0.4s;
-      -o-transition:opacity 0.4s;}
+  &:hover{
+    opacity: .4;
+    -webkit-transition:opacity 0.4s;
+    -moz-transition:opacity 0.4s;
+  -o-transition:opacity 0.4s;}
 
 }
 
