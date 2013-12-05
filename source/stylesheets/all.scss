@@ -34,23 +34,23 @@ html {
   @include pad(1em em(45));
 }
 
-.welcome {
-  -webkit-animation-name: welcome;
--webkit-animation-duration: .7s; }
+.pow-ease {
+  @include animation(pow 0.7s ease);
+}
 
-@-webkit-keyframes welcome {
+@include keyframes(pow) {
   from {
-    -webkit-transform: scale(0);
-  opacity: 0;}
+    @include transform(scale(0));
+  }
   60% {
-    -webkit-transform: scale(0);
-  opacity: 0;}
+    @include transform(scale(0));
+  }
   80% {
-    -webkit-transform: scale(1.03);
-    -webkit-animation-timing-function: ease-out;
-  opacity: 1;}
+    @include transform(scale(1.03));
+  }
   to {
-  -webkit-transform: scale(1);}
+    @include transform(scale(1));
+  }
 }
 
 //Image Crop
@@ -64,7 +64,6 @@ html {
 }
 
 //Elements
-
 form{
   input[type="text"],input[type="email"],input[type="tel"],input[type="url"],
   textarea, input {
@@ -95,8 +94,7 @@ button{
 }
 
 //Sprites
-
-.sprite-socialmedia{
+.sprite-socialmedia {
   background-image:url(../../images/icons.png);
   display:inline-block;
   margin:em(0) em(8);
@@ -104,6 +102,7 @@ button{
   text-indent:-9999px;
   height:33px;
   width:33px;
+  
   &:hover{
     opacity: .4;
     -webkit-transition:opacity 0.4s;
