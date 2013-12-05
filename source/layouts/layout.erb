@@ -46,43 +46,46 @@
   
 
   <body class="<%= page_classes %>"> 
-   <nav class="secondary">
-      <ul>
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="../contact.html">Contact</a></li>
-        <li><a href="http://twitter.com/carolanncan"><img src="images/twitter.png" alt="Find me on Twitter"></a></li>
-    </nav>
 
    <header>
+      <nav class="utility">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+          <li><a href="http://twitter.com/carolanncan"><img src="images/twitter.png" alt="Find me on Twitter"></a></li>
+        </ul>
+      </nav>
+
       <nav>
-        <h2><a href="../index.html" class="normal">Carolann Bonner</a></h2>
+        <h2>
+          <a href="../index.html" class="normal">Carolann Bonner</a>
+        </h2>
         <ul>
           <li><%= link_to "My Work", "../work.html" %></li>
           <li><%= link_to "About Me", "../about.html" %></li>
         </ul>
       </nav> 
+
     </header>
 
-  <section id="ParentContainer">
+    <section id="ParentContainer">
+      <%= yield %>    
+    </section>
 
-    <%= yield %>
-  
-  </section>
+    <footer>
+      <div class="column">
+        <h4>Built with: </h4>
+        <p>HTML5 / SASS / Bourbon / Middleman</p> 
+      </div>
 
-  <footer>
-    <div class="column">
-      <h3>Built with: </h3>
-      <p>HTML5 / SASS / Bourbon / Middleman</p> 
-    </div>
+      <div class="column">
+          <h4>Follow</h4>
+          <a href="contact.html" class="email sprite-socialmedia">Email</a>
+          <a href="http://github.com/carolanncan" class="github sprite-socialmedia" >Github</a>
+          <a href="http://twitter.com/carolanncan" class="twitter sprite-socialmedia">Twitter</a>
+          <a href="http://dribbble.com/carolanncan" class="dribbble sprite-socialmedia">Dribbble</a>
+      </div>
+    </footer> 
 
-  <div class="column">
-      <h3>Follow</h3>
-      <a href="contact.html" class="email sprite-socialmedia">Email</a>
-      <a href="http://github.com/carolanncan" class="github sprite-socialmedia" >Github</a>
-      <a href="http://twitter.com/carolanncan" class="twitter sprite-socialmedia">Twitter</a>
-      <a href="http://dribbble.com/carolanncan" class="dribbble sprite-socialmedia">Dribbble</a>
-  </div>
-  </footer> 
-
-</body>
+  </body>
 </html>

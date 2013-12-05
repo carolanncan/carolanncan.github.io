@@ -10,6 +10,6 @@ $max-width:90%;
 
 
 //breakpoints
-$mobile: new-breakpoint(max-width 700px 4);
+$mobile: new-breakpoint(max-width 600px 4);
 $tablet: new-breakpoint(max-width 800px 4);
 $tablet-large:new-breakpoint(max-width 980px 4);
