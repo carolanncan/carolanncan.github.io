@@ -2,15 +2,18 @@
 ///////////////////////////////////////////////////////////////////////////////
 $sans-serif: $helvetica;
 $serif: $georgia;
+$news-cycle: 'News Cycle', geneva, sans-serif;
+$radley: 'Radley', Garamond, georgia;
 
-$base-font-family: $sans-serif;
-$header-font-family: $base-font-family;
+$base-font-family: $news-cycle;
+$header-font-family: $radley;
 
 // Sizes
 ///////////////////////////////////////////////////////////////////////////////
-$base-font-size: 1em;
-$base-line-height: $base-font-size * 1.5;
+$base-font-size: 1.4em;
+$base-line-height: $base-font-size * 1.2;
 $base-border-radius: em(3);
+$hd-ft-height: 2.8em;
 
 // Colors
 ///////////////////////////////////////////////////////////////////////////////
@@ -23,18 +26,27 @@ $light-red: #FBE3E4;
 $light-yellow: #FFF6BF;
 $light-green: #E6EFC2;
 
+$primary-a:#505655;
+$secondary-a:rgba(199,122,0,1);
+$secondary-b:rgba(242,102,31,1);
+$secondary-c:rgba(75,145,9,1);
+
+$neutral-light:rgba(235,235,235,1);
+$black:#3D3D29;
+
 // Body Color
 $base-body-color: white;
 
 //  Font Colors
-$base-font-color: $dark-gray;
-$base-accent-color: $blue;
+$base-font-color: $black;
+$base-accent-color: $secondary-a;
 
 //  Text Link Colors
 $base-link-color: $base-accent-color;
-$hover-link-color: darken($base-accent-color, 15);
+$hover-link-color: darken($base-accent-color, 8);
 
-// Border color
+// Border
+$base-border:1px solid darken($neutral-light, 10%);
 $base-border-color: $light-gray;
 
 // Flash Colors

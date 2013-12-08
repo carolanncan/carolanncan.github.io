@@ -4,71 +4,32 @@ section{
 }
 
 header{
-  background:lighten($neutral-light, 5%);
-  margin-bottom: em(50);
+  background:$neutral-light;
+  margin-bottom: 2em;
 }
 
-nav{
-  @include media($mobile){height:em(190);}
-  // @include pad(em(40) 0);
-  border-bottom:1px solid darken($neutral-light, 4%);
-  height:em(140);
+nav.primary {
+  border-bottom: $base-border;
+  height: $hd-ft-height;
+    ul.inline{
+      li {
+        @include pad(.7em 1em);
+          &:hover {
+            border-bottom: 2px solid $secondary-a;
+          }
+      }
+    }
 }
 
-ul{
-  @include pad(em(12) default); 
-  list-style:none;
-  margin:0 auto em(40) auto;
-  text-align:center;
-    li{
-        @include inline-block;
-        @include pad(0 em(15));
-          text-transform:uppercase;
-            a{
-              padding-bottom:em(10);
-                &:hover{
-                  border-bottom:3px solid $secondary-a;}}}
-}
+//This seems hack-y. Got a question here for Monday!
 
-nav.utility{
-  @include pad(0);
-  height:45px;
-  z-index: 1;
-    ul{
-      @include media ($tablet){
-        @include span-columns(4);
-        @include shift(0);}
-      @include span-columns(10);
-      @include shift(1);
-      @include pad(0);
-      text-align:left;
-      li{
-        border-right: 1px solid darken($neutral-light, 8%);
-        font-size:em(14);
-        height: 45px;
-        margin-left:-7px;
-          &:first-of-type{
-            margin:0;
-            border-left:1px solid darken($neutral-light, 4%);}
-          &:last-of-type{
-            border-left:1px solid darken($neutral-light, 4%);
-            float:right;
-            padding-top:em(8);}
-          &:hover, &:active{
-            background:darken($neutral-light, 6%);
-            transition:.5s;}
-          a{
-            @include media($tablet){margin-top:em(9);}
-            margin-top:em(14);
-            display:block;
-            font-weight:700;
-              img{margin-top:em(-17);}
-                &:hover{border-bottom:none;}}}}
+ul.inline{
+  li{
+    @include inline-block;
+  }
 }
 
 .single{
-  @include media($tablet){@include shift(0);}
-  @include media($mobile){@include pad(em(20) 0)}
   @include span-columns(10);
   @include shift(1);
   @include pad(em(70) em(0));
@@ -80,14 +41,14 @@ nav.utility{
 .column{
   @include media($tablet-large){@include span-columns (4);}
   @include span-columns(5.8);
-  margin-bottom:em(80);
+  // margin-bottom:em(80);
 }
 
 .project-thumb{
   @include media($tablet-large){
     @include span-columns (4);}
   @include span-columns(3.9);
-  border:1px solid darken($neutral-light, 4%);
+  border:$base-border;
   margin-bottom:em(40);
     &:hover{
       background:rgba($neutral-light, .3);
@@ -95,8 +56,6 @@ nav.utility{
     img{
       @include fill-parent;
       margin-bottom:em(8);}
-    h3{
-      font-size:em(33);}
 }
 
 .project-description{
@@ -111,44 +70,28 @@ nav.utility{
   @include pad(0 em(60) em(30));
   border-bottom: 4px double lighten($black, 70%);
   margin-bottom: em(80);
-    h4{
-      text-transform: none;}
 }
 
 .project-gallery, {
-  @include media($tablet-large){
-    @include span-columns(4);
-    @include shift(0);}
   @include span-columns(10);
   @include shift(1);
   img{
     @include media($tablet-large){
       @include fill-parent;}
     width:em(650);}
+    @include media($tablet-large){
+      @include span-columns(4);
+      @include shift(0);}
 }
 
-footer{
-  @include span-columns(12);
-  background:lighten($neutral-light, 4%);
-  border-top:1px solid darken($neutral-light, 20%);
-    .column{
-      @include media($tablet-large){
-        @include span-columns(4 of 4);
-        border-bottom:1px solid darken($neutral-light, 20%);}
-      @include media($mobile){
-        @include pad(em(35) em(0));}
-      @include span-columns(6);
-      @include pad(em(50));
-        border-right:1px solid darken($neutral-light, 20%);
-        margin-bottom:0;
-          &:nth-of-type(2){
-            border-right:none;}}
-      h4{
-        @include media($mobile){
-          display:block;
-          margin:0 0 em(10) 0;}
-        color:$secondary-a;
-        display:inline;}
-      p{
-        display:inline;}
+footer.global{
+  background:$neutral-light;
+  border-top:$base-border;
+  height: $hd-ft-height;
+  @include pad(.5em 1em);
 }
+
+
+
+
+

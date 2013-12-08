@@ -6,26 +6,7 @@
 @import "neat/neat";
 @import "normalize";
 
-@import "partials/variables";
-@import "partials/typography";
 @import "partials/structure";
-
-html {
-  font-family: 'News Cycle', helvetica, sans-serif;
-  font-weight:300;
-
-  @include media ($tablet){
-    font-size: 112.5%;
-  }
-}
-
-.ltr-sp-3 {
-  letter-spacing: 0.1875em;
-}
-
-.center {
-  text-align: center;
-}
 
 ::selection, ::-moz-selection {
   background: rgba($secondary-c, 0.5);
@@ -70,10 +51,7 @@ form {
   textarea, input {
     @include fill-parent;
     @include pad(em(8) 0);
-    border-top:none;
-    border-right:none;
-    border-left:none;
-    border-bottom:1px solid darken($neutral-light, 4%);
+    border: 0 0 1px solid darken($neutral-light, 4%) 0;
     margin:em(10) 0 0 0;
     font-size: em(16);
     letter-spacing:em(1);
@@ -82,17 +60,35 @@ form {
   outline:none;}}
 }
 
-button{
+button {
   @include button (simple, $secondary-a);
   border-radius:8px;
   float:left;
   margin:em(30) 0;
-  p{
-    line-height: em(0);
-    font-size:em(23);
-    font-family: 'News Cycle' sans-serif;
-  font-weight: 300;}
 }
+
+figure{
+  margin:em(20) auto;
+}
+
+figcaption{
+  @include media($tablet-large){
+    @include fill-parent;}
+  @include pad(default);
+  background:lighten($neutral-light, 5%);
+  border-top:1px solid darken($neutral-light, 4%);
+  border-bottom:1px solid darken($neutral-light, 4%);
+  margin:em(34) auto;
+}
+
+hr{
+  border:none;
+  height:1px;
+  width:40%;
+  background:darken($neutral-light, 20%);
+  margin:em(40) auto;
+}
+
 
 //Sprites
 .sprite-socialmedia {

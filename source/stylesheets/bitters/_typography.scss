@@ -4,10 +4,12 @@ body {
   font-size: $base-font-size;
   -webkit-font-smoothing: antialiased;
   line-height: $base-line-height;
+  text-align: center;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, {
   font-family: $header-font-family;
+  font-weight: 300;
   line-height: 1.25em;
   margin: 0;
   text-rendering: optimizeLegibility; // Fix the character spacing for headings
@@ -34,10 +36,15 @@ h5 {
 }
 
 h6 {
-  font-size: $base-font-size;
+  font-size: $base-font-size/1.2;
+  text-transform: uppercase;
+  letter-spacing: $base-font-size / 10;
+  color: darken($neutral-light, 20%);
 }
 
 p {
+  font-size: $base-font-size / 1.2;
+  letter-spacing: $base-font-size / 15;
   margin: 0 0 ($base-line-height * .5);
 }
 
@@ -54,6 +61,15 @@ a {
     color: $hover-link-color;
     outline: none;
   }
+}
+
+.caps {
+  text-transform: uppercase;
+  letter-spacing: .2em;
+}
+
+.small-txt {
+  font-size: $base-font-size / 1.95;
 }
 
 hr {

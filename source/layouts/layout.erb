@@ -15,42 +15,27 @@
 
   <body class="<%= page_classes %>"> 
    <header>
-      <nav class="utility">
-        <ul>
-          <li><a href="../index.html">Home</a></li>
+      <nav class="primary">
+        <ul class="inline caps small-txt">
+          <li><%= link_to "Home", "../index.html"%></li>
+          <li><%= link_to "My Work", "../work.html"%></li>
+          <li><%= link_to "About Me", "../about.html"%></li>
           <li><a href="../contact.html">Contact</a></li>
-          <li><a href="http://twitter.com/carolanncan"><img src="images/twitter.png" alt="Find me on Twitter"></a></li>
         </ul>
       </nav>
-
-      <nav class="center">
-        <h2>
-          <a href="../index.html" class="normal">Carolann Bonner</a>
-        </h2>
-        <ul>
-          <li><%= link_to "My Work", "../work.html" %></li>
-          <li><%= link_to "About Me", "../about.html" %></li>
-        </ul>
-      </nav> 
-
     </header>
 
-    <section class="center">
+    <section>
       <%= yield %>
     </section>
 
-    <footer>
-      <div class="column">
-        <h4>Built with: </h4>
-        <p>HTML5 / SASS / Bourbon / Middleman</p> 
-      </div>
-
-      <div class="column">
-          <h4>Follow</h4>
-          <a href="contact.html" class="email sprite-socialmedia">Email</a>
-          <a href="http://github.com/carolanncan" class="github sprite-socialmedia" >Github</a>
-          <a href="http://twitter.com/carolanncan" class="twitter sprite-socialmedia">Twitter</a>
-          <a href="http://dribbble.com/carolanncan" class="dribbble sprite-socialmedia">Dribbble</a>
+    <footer class="global">
+      <ul class="inline caps small-txt">
+       <li>Follow</li>
+        <li><a href="contact.html" class="email sprite-socialmedia">Email</a></li>
+        <li><a href="http://github.com/carolanncan" class="github sprite-socialmedia" >Github</a></li>
+        <li><a href="http://twitter.com/carolanncan" class="twitter sprite-socialmedia">Twitter</a></li>
+        <li><a href="http://dribbble.com/carolanncan" class="dribbble sprite-socialmedia">Dribbble</a></li>
       </div>
     </footer> 
    
