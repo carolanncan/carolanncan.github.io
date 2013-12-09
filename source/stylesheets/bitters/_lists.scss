@@ -4,7 +4,7 @@ ul, ol {
   list-style-type: none;
 
   &%default-ul {
-    list-style-type: disc;
+    list-style-type: circle;
     margin-bottom: $base-line-height / 2;
     padding-left: $base-line-height;
   }
@@ -13,6 +13,28 @@ ul, ol {
     list-style-type: decimal;
     margin-bottom: $base-line-height / 2;
     padding-left: $base-line-height;
+  }
+}
+
+//(?)This seems hack-y. Got a question here for Monday!
+
+ul.inline {
+  li{
+    @include inline-block;
+  }
+}
+
+//(?) last-of-type pseudo class not working it seems
+
+ul.inline.slash {
+  li{
+    @include inline-block;
+      &:after {
+        content: ' / ';
+      }
+      &:last-of-type {
+        content: none;
+      }
   }
 }
 

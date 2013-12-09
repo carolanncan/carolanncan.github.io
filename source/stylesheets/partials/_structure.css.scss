@@ -3,9 +3,9 @@ section{
   @include outer-container;
 }
 
-header{
+header.global{
   background:$neutral-light;
-  margin-bottom: 2em;
+  margin-bottom: 3.5em;
 }
 
 nav.primary {
@@ -21,77 +21,62 @@ nav.primary {
     }
 }
 
-//This seems hack-y. Got a question here for Monday!
-
-ul.inline{
-  li{
-    @include inline-block;
+//(?)Is it okay to utilize span-columns to center content on the page, since I use it or would it be better to use margin or padding for that?
+.single {
+  @include media($medium-screen) {
+    @include span-columns(4);
   }
+
 }
 
-.single{
-  @include span-columns(10);
-  @include shift(1);
-  @include pad(em(70) em(0));
-    @include media($tablet){@include span-columns(4);}
-    border-top: 4px double lighten($black, 70%);
-      &:nth-of-type(1){border:none;}
-}
-
-.column{
-  @include media($tablet-large){@include span-columns (4);}
-  @include span-columns(5.8);
-  // margin-bottom:em(80);
+.column {
+  @include span-columns(6);
+  @include pad(0 default);
+  margin: 1em 0;
+  @include media($medium-screen) {
+    @include span-columns (4);
+  }
 }
 
 .project-thumb{
-  @include media($tablet-large){
-    @include span-columns (4);}
-  @include span-columns(3.9);
+  @include span-columns(4);
   border:$base-border;
-  margin-bottom:em(40);
-    &:hover{
-      background:rgba($neutral-light, .3);
-      transition:.9s;}
-    img{
+  margin-bottom:4em;
+    &:hover {
+      background:$neutral-light;
+      transition:.9s;
+    }
+    img {
       @include fill-parent;
-      margin-bottom:em(8);}
+    }
+  @include media($medium-screen) {
+    @include span-columns (4);
+  }
 }
 
-.project-description{
-  @include media($tablet-large){
-    @include span-columns(4);
-    @include shift(0);}
-  @include media($mobile){
-    @include pad(0);
-  }
+.project-description {
   @include span-columns(10);
   @include shift(1);
   @include pad(0 em(60) em(30));
-  border-bottom: 4px double lighten($black, 70%);
-  margin-bottom: em(80);
 }
 
 .project-gallery, {
   @include span-columns(10);
   @include shift(1);
   img{
-    @include media($tablet-large){
+    @include media($medium-screen){
       @include fill-parent;}
     width:em(650);}
-    @include media($tablet-large){
+    @include media($medium-screen){
       @include span-columns(4);
       @include shift(0);}
 }
 
-footer.global{
+footer.global {
+  @include fill-parent;
+  @include pad(2em 0 0 0);
   background:$neutral-light;
   border-top:$base-border;
-  height: $hd-ft-height;
-  @include pad(.5em 1em);
+  min-height: $hd-ft-height * 2;
+  margin-top: 2em;
 }
-
-
-
-
-

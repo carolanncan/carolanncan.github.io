@@ -1,9 +1,9 @@
 @charset "utf-8";
 
 @import "bourbon/bourbon";
-@import "grid-settings";
 @import "bitters/bitters";
 @import "neat/neat";
+@import "neat/neat-helpers";
 @import "normalize";
 
 @import "partials/structure";
@@ -12,8 +12,8 @@
   background: rgba($secondary-c, 0.5);
 }
 
-.wrap{
-  @include pad(1em em(45));
+.wrap {
+  @include pad(0 2em);
 }
 
 .pow-ease {
@@ -37,12 +37,14 @@
 
 //Image Crop
 .crop-circle {
-  max-width: 100%;
+  height:12em;
+  width:12em;
   display: block;
   box-shadow: 0 0 0 3px darken($neutral-light, 10%);
   overflow: hidden;
   border: em(10) solid #fff;
   border-radius: 50%;
+  margin: $base-line-height auto;
 }
 
 //Elements
@@ -72,7 +74,7 @@ figure{
 }
 
 figcaption{
-  @include media($tablet-large){
+  @include media($medium-screen){
     @include fill-parent;}
   @include pad(default);
   background:lighten($neutral-light, 5%);
@@ -80,15 +82,6 @@ figcaption{
   border-bottom:1px solid darken($neutral-light, 4%);
   margin:em(34) auto;
 }
-
-hr{
-  border:none;
-  height:1px;
-  width:40%;
-  background:darken($neutral-light, 20%);
-  margin:em(40) auto;
-}
-
 
 //Sprites
 .sprite-socialmedia {
