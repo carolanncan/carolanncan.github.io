@@ -1,9 +1,9 @@
 //Structure
-section{
+section {
   @include outer-container;
 }
 
-header.global{
+header.global {
   background:$neutral-light;
   margin-bottom: 3.5em;
 }
@@ -11,7 +11,7 @@ header.global{
 nav.primary {
   border-bottom: $base-border;
   height: $hd-ft-height;
-    ul.inline{
+    ul.inline {
       li {
         @include pad(.7em 1em);
           &:hover {
@@ -21,21 +21,15 @@ nav.primary {
     }
 }
 
-//(?)Is it okay to utilize span-columns to center content on the page, since I use it or would it be better to use margin or padding for that?
-.single {
-  @include media($medium-screen) {
-    @include span-columns(4);
-  }
-
-}
-
-.column {
+.col {
   @include span-columns(6);
   @include pad(0 default);
   margin: 1em 0;
+
   @include media($medium-screen) {
     @include span-columns (4);
   }
+
 }
 
 .project-thumb{
@@ -46,30 +40,14 @@ nav.primary {
       background:$neutral-light;
       transition:.9s;
     }
+ 
     img {
       @include fill-parent;
     }
+ 
   @include media($medium-screen) {
     @include span-columns (4);
   }
-}
-
-.project-description {
-  @include span-columns(10);
-  @include shift(1);
-  @include pad(0 em(60) em(30));
-}
-
-.project-gallery, {
-  @include span-columns(10);
-  @include shift(1);
-  img{
-    @include media($medium-screen){
-      @include fill-parent;}
-    width:em(650);}
-    @include media($medium-screen){
-      @include span-columns(4);
-      @include shift(0);}
 }
 
 footer.global {

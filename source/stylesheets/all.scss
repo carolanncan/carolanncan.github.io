@@ -48,39 +48,13 @@
 }
 
 //Elements
-form {
-  input[type="text"],input[type="email"],input[type="tel"],input[type="url"],
-  textarea, input {
-    @include fill-parent;
-    @include pad(em(8) 0);
-    border: 0 0 1px solid darken($neutral-light, 4%) 0;
-    margin:em(10) 0 0 0;
-    font-size: em(16);
-    letter-spacing:em(1);
-    &:focus{
-      border-bottom:1px solid $secondary-a;
-  outline:none;}}
-}
+
 
 button {
   @include button (simple, $secondary-a);
   border-radius:8px;
   float:left;
   margin:em(30) 0;
-}
-
-figure{
-  margin:em(20) auto;
-}
-
-figcaption{
-  @include media($medium-screen){
-    @include fill-parent;}
-  @include pad(default);
-  background:lighten($neutral-light, 5%);
-  border-top:1px solid darken($neutral-light, 4%);
-  border-bottom:1px solid darken($neutral-light, 4%);
-  margin:em(34) auto;
 }
 
 //Sprites

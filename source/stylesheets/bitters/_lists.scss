@@ -27,7 +27,7 @@ ul.inline {
 //(?) last-of-type pseudo class not working it seems
 
 ul.inline.slash {
-  li{
+  li {
     @include inline-block;
       &:after {
         content: ' / ';

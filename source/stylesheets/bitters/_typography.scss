@@ -45,7 +45,7 @@ h6 {
 
 p {
   font-size: $base-font-size / 1.2;
-  letter-spacing: $base-font-size / 15;
+  letter-spacing: $base-font-size *.03;
   line-height: $base-line-height;
   margin: ($base-line-height * .5) 0;
 }
@@ -86,9 +86,8 @@ hr {
 hr.double {
   background:none;
   border-bottom: 4px double lighten($black, 70%);
-  float: left;
-  position: relative;
   width: 100%;
+  margin: $base-line-height auto;
 }
 
 img {
@@ -116,17 +115,33 @@ del {
 }
 
 blockquote {
-  border-left: 2px solid $base-border-color;
-  color: lighten($base-font-color, 15);
-  margin: $base-line-height 0;
+  @extend h6;
+  // border-left: 2px solid $base-border-color;
+  // color: darken($neutral-light, 30%);
+  margin: $base-line-height / 3 auto;
   padding-left: $base-line-height / 2;
+  // font-size: $base-font-size / 2;
+  font-weight: bold;
 }
 
 cite {
-  color: lighten($base-font-color, 25);
-  font-style: italic;
-
+  // @extend h6;
   &:before {
     content: '\2014 \00A0';
   }
 }
+
+figure {
+  margin: 0 auto;
+  padding: 1em 0;
+}
+
+figcaption{
+  @extend .small-txt;
+  background:lighten($neutral-light, 5%);
+  border-top: $base-border;
+  border-bottom: $base-border;
+  margin:3em auto;
+  padding:$base-font-size / 2;
+}
+
