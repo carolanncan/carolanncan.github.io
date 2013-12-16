@@ -21,17 +21,23 @@ ul, ol {
 ul.inline {
   li{
     @include inline-block;
+    padding: .5em;
   }
 }
 
-//(?) last-of-type pseudo class not working it seems
+//(?) content:none not working on last-of-type
 
-ul.inline.slash {
+.slash {
+ 
   li {
     @include inline-block;
+      
       &:after {
+        color: lighten($black, 60%);
         content: ' / ';
+        padding-left: 1em;
       }
+      
       &:last-of-type {
         content: none;
       }

@@ -13,7 +13,7 @@
 }
 
 .wrap {
-  @include pad(0 2em);
+  @include pad(0 12%);
 }
 
 .pow-ease {
@@ -37,9 +37,9 @@
 
 //Image Crop
 .crop-circle {
-  height:12em;
-  width:12em;
-  display: block;
+  @include inline-block;
+  height: 12em;
+  width: 12em;
   box-shadow: 0 0 0 3px darken($neutral-light, 10%);
   overflow: hidden;
   border: em(10) solid #fff;
@@ -59,13 +59,13 @@ button {
 
 //Sprites
 .sprite-socialmedia {
+  @include inline-block;
   background-image:url(../../images/icons.png);
-  display:inline-block;
-  margin:em(0) em(8);
+  margin: em(0) em(8);
   vertical-align: middle;
-  text-indent:-9999px;
-  height:33px;
-  width:33px;
+  text-indent: -9999px;
+  height: 33px;
+  width: 33px;
   
   &:hover{
     opacity: .4;

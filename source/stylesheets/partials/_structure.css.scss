@@ -11,9 +11,12 @@ header.global {
 nav.primary {
   border-bottom: $base-border;
   height: $hd-ft-height;
+    
     ul.inline {
+    
       li {
         @include pad(.7em 1em);
+    
           &:hover {
             border-bottom: 2px solid $secondary-a;
           }
@@ -32,13 +35,14 @@ nav.primary {
 
 }
 
-.project-thumb{
+.thumbnail{
   @include span-columns(4);
   border:$base-border;
   margin-bottom:4em;
+
     &:hover {
-      background:$neutral-light;
-      transition:.9s;
+      background: $neutral-light;
+      transition: .9s;
     }
  
     img {
@@ -53,8 +57,8 @@ nav.primary {
 footer.global {
   @include fill-parent;
   @include pad(2em 0 0 0);
-  background:$neutral-light;
-  border-top:$base-border;
+  background: $neutral-light;
+  border-top: $base-border;
   min-height: $hd-ft-height * 2;
   margin-top: 2em;
 }
