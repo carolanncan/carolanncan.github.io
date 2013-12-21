@@ -14,36 +14,32 @@
   </head>
 
   <body class="<%= page_classes %>"> 
-   <header class="global">
-      <nav class="primary">
-        <ul class="inline caps small-txt">
-          <li><%= link_to "Home", "../index.html"%></li>
-          <li><%= link_to "Projects", "../work.html"%></li>
-          <li><%= link_to "About Me", "../about.html"%></li>
-          <li><a href="../contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
+  <header class="global">
+    <nav class="primary">
+      <ul class="inline caps small-txt">
+        <li><%= link_to "Home", "../index.html"%></li>
+        <li><%= link_to "Projects", "../work.html"%></li>
+        <li><%= link_to "About Me", "../about.html"%></li>
+      </ul>
+    </nav>
+  </header>
 
-    <section>
-      <%= yield %>
-    </section>
+  <section>
+    <%= yield %>
+  </section>
 
-    <footer class="global">
+  <footer class="global">
     <section>
       <ul class="inline caps small-txt">
-       <li>Follow</li>
-        <li><a href="contact.html" class="email sprite-socialmedia">Email</a></li>
+        <li>Contact</li>
+        <li><a href="mailto:carolanncan@gmail.com" class="email sprite-socialmedia">Email</a></li>
         <li><a href="http://github.com/carolanncan" class="github sprite-socialmedia" >Github</a></li>
         <li><a href="http://twitter.com/carolanncan" class="twitter sprite-socialmedia">Twitter</a></li>
         <li><a href="http://dribbble.com/carolanncan" class="dribbble sprite-socialmedia">Dribbble</a></li>
       </ul>
-      </section>
-      <section>
-        
-      </section>
-    </footer> 
-   
+    </section>
+  </footer>
+
    <!-- Google Analytics -->
     <script>
     // Activate the Google page tracking code

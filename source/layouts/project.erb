@@ -2,8 +2,7 @@
 layout: "project"
 ---
 <%= stylesheet_link_tag "sass/all" %>
- <%= javascript_include_tag  "/all" %>
-
+<%= javascript_include_tag  "/all" %>
 
 <html>
 <head>
@@ -13,13 +12,11 @@ layout: "project"
 <body>
 
 <% wrap_layout :layout do %>
- 
   <section>
-		<%= yield %>
-		<hr class="double">
-		<h6><a href="work.html">Back to gallery</a></h6>
-  </section>
-
+  <%= yield %>
+  <hr class="double">
+  <h6><a href="work.html">Back to gallery</a></h6>
+</section>
 <% end %>
 
 </html>

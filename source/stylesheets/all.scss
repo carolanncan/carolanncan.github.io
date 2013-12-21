@@ -48,30 +48,28 @@
 }
 
 //Elements
-
-
 button {
   @include button (simple, $secondary-a);
-  border-radius:8px;
-  float:left;
-  margin:em(30) 0;
+  border-radius: 8px;
+  float: left;
+  margin: em(30) 0;
 }
 
 //Sprites
 .sprite-socialmedia {
   @include inline-block;
-  background-image:url(../../images/icons.png);
+  background-image: url(../../images/icons.png);
   margin: em(0) em(8);
   vertical-align: middle;
   text-indent: -9999px;
   height: 33px;
   width: 33px;
-  
+
   &:hover{
     opacity: .4;
     -webkit-transition:opacity 0.4s;
     -moz-transition:opacity 0.4s;
-  -o-transition:opacity 0.4s;}
+    -o-transition:opacity 0.4s;}
 
 }
 

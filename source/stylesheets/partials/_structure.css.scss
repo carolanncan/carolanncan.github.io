@@ -10,7 +10,7 @@ header.global {
 
 nav.primary {
   border-bottom: $base-border;
-  height: $hd-ft-height;
+  height: $global-element-height;
     
     ul.inline {
     
@@ -37,28 +37,31 @@ nav.primary {
 
 .thumbnail{
   @include span-columns(4);
-  border:$base-border;
-  margin-bottom:4em;
+  border: $base-border;
+  margin-bottom: 4em;
 
     &:hover {
       background: $neutral-light;
       transition: .9s;
     }
- 
+
     img {
       @include fill-parent;
     }
- 
+
+    p {
+      margin: 0 0 1em 0;
+    }
+
   @include media($medium-screen) {
     @include span-columns (4);
   }
 }
 
 footer.global {
-  @include fill-parent;
-  @include pad(2em 0 0 0);
+  @include pad(4.5em 0 0 0);
   background: $neutral-light;
   border-top: $base-border;
-  min-height: $hd-ft-height * 2;
-  margin-top: 2em;
+  min-height: $global-element-height * 4;
+  margin-top: 5em;
 }
