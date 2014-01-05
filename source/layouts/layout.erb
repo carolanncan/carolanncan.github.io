@@ -5,54 +5,57 @@
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
     <title><%= current_page.data.title || "Carolann Bonner" %></title>
 
-    <link href='http://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Radley' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=News+Cycle' rel='stylesheet' type='text/css'>
-
     <%= stylesheet_link_tag "all" %>
-    <%= javascript_include_tag  "all" %>
   </head>
 
   <body class="<%= page_classes %>"> 
-  <header class="global">
-    <nav class="primary">
-      <ul class="inline caps small-txt">
-        <li><%= link_to "Home", "../index.html"%></li>
-        <li><%= link_to "Projects", "../work.html"%></li>
-        <li><%= link_to "About Me", "../about.html"%></li>
-      </ul>
-    </nav>
-  </header>
+    <header class="global">
+      <nav class="primary">
+        <ul class="inline caps small-txt">
+          <li><%= link_to "Home", "../index.html"%></li>
+          <li><%= link_to "Projects", "../work.html"%></li>
+          <li><%= link_to "About Me", "../about.html"%></li>
+        </ul>
+      </nav>
+    </header>
 
-  <section>
-    <%= yield %>
-  </section>
-
-  <footer class="global">
     <section>
-      <ul class="inline caps small-txt">
-        <li>Contact</li>
-        <li><a href="mailto:carolanncan@gmail.com" class="email sprite-socialmedia">Email</a></li>
-        <li><a href="http://github.com/carolanncan" class="github sprite-socialmedia" >Github</a></li>
-        <li><a href="http://twitter.com/carolanncan" class="twitter sprite-socialmedia">Twitter</a></li>
-        <li><a href="http://dribbble.com/carolanncan" class="dribbble sprite-socialmedia">Dribbble</a></li>
-      </ul>
+      <%= yield %>
     </section>
-  </footer>
 
-   <!-- Google Analytics -->
+    <footer class="global">
+      <section>
+        <ul class="inline caps small-txt">
+          <li>Contact</li>
+          <li>
+            <a href="mailto:carolanncan@gmail.com" class="email sprite-socialmedia">Email</a
+            ></li>
+          <li>
+            <a href="http://github.com/carolanncan" class="github sprite-socialmedia" >Github</a>
+          </li>
+          <li>
+            <a href="http://twitter.com/carolanncan" class="twitter sprite-socialmedia">Twitter</a>
+          </li>
+          <li>
+            <a href="http://dribbble.com/carolanncan" class="dribbble sprite-socialmedia">Dribbble</a>
+          </li>
+        </ul>
+      </section>
+    </footer>
+
+    <!-- Google Analytics -->
     <script>
-    // Activate the Google page tracking code
+      // Activate the Google page tracking code
       (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();  
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();  
 
-    // Track when a project is opened
-    $(document).bind("projectLoadStart", function(e, pid, href){
-       _gaq.push(['_trackPageview','/project/'+href[1]]);
-    });
+      // Track when a project is opened
+      $(document).bind("projectLoadStart", function(e, pid, href){
+        _gaq.push(['_trackPageview','/project/'+href[1]]);
+      });
     </script>
 
   </body>

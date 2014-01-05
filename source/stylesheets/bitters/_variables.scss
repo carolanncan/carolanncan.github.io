@@ -1,12 +1,10 @@
 // Typography
 ///////////////////////////////////////////////////////////////////////////////
-$sans-serif: $helvetica;
-$serif: $georgia;
-$news-cycle: 'News Cycle', geneva, sans-serif;
-$radley: 'Radley', Garamond, georgia;
+$sans-serif: $news-cycle;
+$serif: $radley;
 
-$base-font-family: $news-cycle;
-$header-font-family: $radley;
+$base-font-family: $sans-serif;
+$header-font-family: $serif;
 
 // Sizes
 ///////////////////////////////////////////////////////////////////////////////
@@ -18,9 +16,6 @@ $global-element-height: 2.8em;
 // Colors
 ///////////////////////////////////////////////////////////////////////////////
 
-$blue: #477DCA;
-$dark-gray: #333;
-$medium-gray: #999;
 $light-gray: #DDD;
 $light-red: #FBE3E4;
 $light-yellow: #FFF6BF;

@@ -11,17 +11,20 @@ header.global {
 nav.primary {
   border-bottom: $base-border;
   height: $global-element-height;
-    
-    ul.inline {
-    
-      li {
-        @include pad(.7em 1em);
-    
-          &:hover {
-            border-bottom: 2px solid $secondary-a;
-          }
-      }
+
+  ul.inline {
+
+    li {
+      @include pad(.7em 1em);
+
+      &:hover {
+        border-bottom: 2px solid $secondary-a;
+        }
     }
+  }
+  @include media($small-screen) {
+   background: red;
+  }
 }
 
 .col {
@@ -32,26 +35,25 @@ nav.primary {
   @include media($medium-screen) {
     @include span-columns (4);
   }
-
 }
 
-.thumbnail{
+.thumbnail {
   @include span-columns(4);
   border: $base-border;
   margin-bottom: 4em;
 
-    &:hover {
-      background: $neutral-light;
-      transition: .9s;
-    }
+  &:hover {
+    background: $neutral-light;
+    transition: .9s;
+  }
 
-    img {
-      @include fill-parent;
-    }
+  img {
+    @include fill-parent;
+  }
 
-    p {
-      margin: 0 0 1em 0;
-    }
+  p {
+    margin: 0 0 1em 0;
+  }
 
   @include media($medium-screen) {
     @include span-columns (4);

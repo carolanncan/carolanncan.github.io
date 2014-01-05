@@ -1,5 +1,7 @@
 @charset "utf-8";
 
+@import url(http://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic);
+
 @import "bourbon/bourbon";
 @import "bitters/bitters";
 @import "neat/neat";
@@ -14,25 +16,6 @@
 
 .wrap {
   @include pad(0 12%);
-}
-
-.pow-ease {
-  @include animation(pow 0.7s ease);
-}
-
-@include keyframes(pow) {
-  from {
-    @include transform(scale(0));
-  }
-  60% {
-    @include transform(scale(0));
-  }
-  80% {
-    @include transform(scale(1.03));
-  }
-  to {
-    @include transform(scale(1));
-  }
 }
 
 //Image Crop
