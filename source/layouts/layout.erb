@@ -10,34 +10,45 @@
 
   <body class="<%= page_classes %>"> 
     <header class="global">
-      <nav class="primary">
+      <nav class="primary" id="cl-effect-3">
         <ul class="inline caps small-txt">
-          <li><%= link_to "Home", "../index.html"%></li>
-          <li><%= link_to "Projects", "../work.html"%></li>
-          <li><%= link_to "About Me", "../about.html"%></li>
+          <li>
+            <%= link_to "Home", "../index.html"%>
+          </li>
+          <li>
+            <%= link_to "Projects", "../work.html"%>
+          </li>
+          <li>
+            <%= link_to "About Me", "../about.html"%>
+          </li>
         </ul>
       </nav>
     </header>
 
-    <section>
-      <%= yield %>
-    </section>
+    <main>
+      <section>
+        <%= yield %>
+      </section>
+    </main>
 
     <footer class="global">
       <section>
         <ul class="inline caps small-txt">
-          <li>Contact</li>
           <li>
-            <a href="mailto:carolanncan@gmail.com" class="email sprite-socialmedia">Email</a
-            ></li>
+            <% link_to 'http://github.com/carolanncan' do %>
+              <i class='fa fa-github'></i>
+            <% end %>
+          </li>
+
           <li>
-            <a href="http://github.com/carolanncan" class="github sprite-socialmedia" >Github</a>
+            <% link_to 'http://twitter.com/carolanncan' do %>
+              <i class="fa fa-twitter"></i>
+            <% end %>
           </li>
           <li>
-            <a href="http://twitter.com/carolanncan" class="twitter sprite-socialmedia">Twitter</a>
-          </li>
-          <li>
-            <a href="http://dribbble.com/carolanncan" class="dribbble sprite-socialmedia">Dribbble</a>
+            <% link_to 'http://dribbble.com/carolanncan' do %>
+              <i class='fa fa-dribbble'></i>
+            <% end %>
           </li>
         </ul>
       </section>
