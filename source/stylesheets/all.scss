@@ -9,6 +9,7 @@
 @import "bitters/grid-settings";
 @import "neat";
 
+@import "partials/animations";
 @import "partials/structure";
 
 ::selection, ::-moz-selection {
@@ -19,14 +20,17 @@
   @include pad(0 12%);
 }
 
-//Image Crop
 .crop-circle {
+  @include background-image(url("/images/cbonner_2014.jpg"));
   @include inline-block;
-  height: 12em;
-  width: 12em;
-  box-shadow: 0 0 0 3px darken($neutral-light, 10%);
+  @include size(12em);
+  background-position: 70% 100%;
+  background-repeat: no-repeat;
+  background-size: 159%;
+  box-shadow: 0 0 0 1px darken($neutral-light, 30%);
+  opacity: .9;
   overflow: hidden;
-  border: em(10) solid #fff;
+  border: em(5) solid #fff;
   border-radius: 50%;
   margin: $base-line-height auto;
 }
