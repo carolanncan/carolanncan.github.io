@@ -2,7 +2,6 @@
 @charset "utf-8";
 
 @import "normalize";
-@import url(http://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic);
 
 @import "bourbon";
 @import "bitters/bitters";
@@ -24,6 +23,7 @@
   @include background-image(url("/images/cbonner_2014.jpg"));
   @include inline-block;
   @include size(12em);
+  @include transition(all .15s linear);
   background-position: 70% 100%;
   background-repeat: no-repeat;
   background-size: 159%;
@@ -33,6 +33,10 @@
   border: em(5) solid #fff;
   border-radius: 50%;
   margin: $base-line-height auto;
+
+  &:hover {
+    background-size: 162%;
+  }
 }
 
 //Elements
