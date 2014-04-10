@@ -2525,6 +2525,70 @@ dl {
   100% {
     opacity: 1; } }
 
+/* line 1, /Users/carolannbonner/dev/carolanncan/personal-site/source/stylesheets/partials/_footer.scss */
+footer.global {
+  padding: 4.5em 0 0 0;
+  background: white;
+  border-top: 1px solid #d2d2d2;
+  min-height: 11.2em;
+  margin-top: 5em; }
+  /* line 9, /Users/carolannbonner/dev/carolanncan/personal-site/source/stylesheets/partials/_footer.scss */
+  footer.global ul li {
+    -webkit-transition: all 0.15s linear;
+    -moz-transition: all 0.15s linear;
+    transition: all 0.15s linear;
+    display: inline-block; }
+    /* line 13, /Users/carolannbonner/dev/carolanncan/personal-site/source/stylesheets/partials/_footer.scss */
+    footer.global ul li i {
+      font-size: 1.88em; }
+
+/* line 1, /Users/carolannbonner/dev/carolanncan/personal-site/source/stylesheets/partials/_nav.scss */
+header.global {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  background: white;
+  border-bottom: 1px solid #ebebeb;
+  z-index: 1; }
+
+/* line 8, /Users/carolannbonner/dev/carolanncan/personal-site/source/stylesheets/partials/_nav.scss */
+nav.primary {
+  height: 2.8em; }
+  /* line 12, /Users/carolannbonner/dev/carolanncan/personal-site/source/stylesheets/partials/_nav.scss */
+  nav.primary ul.inline li {
+    padding: 0.7em;
+    -webkit-transition: all 0.15s linear;
+    -moz-transition: all 0.15s linear;
+    transition: all 0.15s linear;
+    position: relative; }
+    /* line 18, /Users/carolannbonner/dev/carolanncan/personal-site/source/stylesheets/partials/_nav.scss */
+    nav.primary ul.inline li a:after {
+      position: absolute;
+      top: 100%;
+      left: 0px;
+      width: 100%;
+      height: 3px;
+      -webkit-transform: translateY(2px);
+      -moz-transform: translateY(2px);
+      -ms-transform: translateY(2px);
+      -o-transform: translateY(2px);
+      transform: translateY(2px);
+      -webkit-transition: all 0.15s linear;
+      -moz-transition: all 0.15s linear;
+      transition: all 0.15s linear;
+      background: #c77a00;
+      content: '';
+      opacity: 0; }
+    /* line 29, /Users/carolannbonner/dev/carolanncan/personal-site/source/stylesheets/partials/_nav.scss */
+    nav.primary ul.inline li a:hover:after {
+      opacity: 1;
+      -webkit-transform: translateY(-6px);
+      -moz-transform: translateY(-6px);
+      -ms-transform: translateY(-6px);
+      -o-transform: translateY(-6px);
+      transform: translateY(-6px); }
+
 /* line 1, /Users/carolannbonner/dev/carolanncan/personal-site/source/stylesheets/partials/_structure.css.scss */
 section {
   -webkit-animation: fade-in 1s;
@@ -2547,56 +2611,6 @@ main {
   margin-top: 5em; }
 
 /* line 10, /Users/carolannbonner/dev/carolanncan/personal-site/source/stylesheets/partials/_structure.css.scss */
-header.global {
-  position: fixed;
-  top: 0px;
-  right: 0px;
-  left: 0px;
-  background: #ebebeb;
-  z-index: 1; }
-
-/* line 16, /Users/carolannbonner/dev/carolanncan/personal-site/source/stylesheets/partials/_structure.css.scss */
-.active {
-  border-bottom: 2px solid black; }
-
-/* line 20, /Users/carolannbonner/dev/carolanncan/personal-site/source/stylesheets/partials/_structure.css.scss */
-nav.primary {
-  height: 2.8em; }
-  /* line 25, /Users/carolannbonner/dev/carolanncan/personal-site/source/stylesheets/partials/_structure.css.scss */
-  nav.primary ul.inline li {
-    padding: 0.7em;
-    -webkit-transition: all 0.15s linear;
-    -moz-transition: all 0.15s linear;
-    transition: all 0.15s linear;
-    position: relative; }
-    /* line 31, /Users/carolannbonner/dev/carolanncan/personal-site/source/stylesheets/partials/_structure.css.scss */
-    nav.primary ul.inline li a:after {
-      position: absolute;
-      top: 100%;
-      left: 0px;
-      width: 100%;
-      height: 3px;
-      -webkit-transform: translateY(-8px);
-      -moz-transform: translateY(-8px);
-      -ms-transform: translateY(-8px);
-      -o-transform: translateY(-8px);
-      transform: translateY(-8px);
-      -webkit-transition: all 0.15s linear;
-      -moz-transition: all 0.15s linear;
-      transition: all 0.15s linear;
-      background: #c77a00;
-      content: '';
-      opacity: 0; }
-    /* line 42, /Users/carolannbonner/dev/carolanncan/personal-site/source/stylesheets/partials/_structure.css.scss */
-    nav.primary ul.inline li a:hover:after {
-      opacity: 1;
-      -webkit-transform: translateY(0px);
-      -moz-transform: translateY(0px);
-      -ms-transform: translateY(0px);
-      -o-transform: translateY(0px);
-      transform: translateY(0px); }
-
-/* line 52, /Users/carolannbonner/dev/carolanncan/personal-site/source/stylesheets/partials/_structure.css.scss */
 .col {
   float: left;
   display: block;
@@ -2608,7 +2622,7 @@ nav.primary {
   .col:last-child {
     margin-right: 0; }
   @media screen and (min-width: new-breakpoint(min-width 47.5em 4)) {
-    /* line 52, /Users/carolannbonner/dev/carolanncan/personal-site/source/stylesheets/partials/_structure.css.scss */
+    /* line 10, /Users/carolannbonner/dev/carolanncan/personal-site/source/stylesheets/partials/_structure.css.scss */
     .col {
       float: left;
       display: block;
@@ -2618,7 +2632,7 @@ nav.primary {
       .col:last-child {
         margin-right: 0; } }
 
-/* line 62, /Users/carolannbonner/dev/carolanncan/personal-site/source/stylesheets/partials/_structure.css.scss */
+/* line 20, /Users/carolannbonner/dev/carolanncan/personal-site/source/stylesheets/partials/_structure.css.scss */
 .thumbnail {
   width: 60%;
   height: 9em;
@@ -2628,10 +2642,10 @@ nav.primary {
   border-bottom: 1px solid #ebebeb;
   margin: 1em auto;
   padding: 4% 0; }
-  /* line 69, /Users/carolannbonner/dev/carolanncan/personal-site/source/stylesheets/partials/_structure.css.scss */
+  /* line 27, /Users/carolannbonner/dev/carolanncan/personal-site/source/stylesheets/partials/_structure.css.scss */
   .thumbnail a {
     color: #3d3d29; }
-  /* line 73, /Users/carolannbonner/dev/carolanncan/personal-site/source/stylesheets/partials/_structure.css.scss */
+  /* line 31, /Users/carolannbonner/dev/carolanncan/personal-site/source/stylesheets/partials/_structure.css.scss */
   .thumbnail i {
     width: 30px;
     height: 30px;
@@ -2644,28 +2658,28 @@ nav.primary {
     padding-left: .1em;
     padding-top: .15em;
     visibility: hidden; }
-  /* line 84, /Users/carolannbonner/dev/carolanncan/personal-site/source/stylesheets/partials/_structure.css.scss */
+  /* line 42, /Users/carolannbonner/dev/carolanncan/personal-site/source/stylesheets/partials/_structure.css.scss */
   .thumbnail:hover {
     border-color: #c77a00;
     width: 65%; }
-    /* line 88, /Users/carolannbonner/dev/carolanncan/personal-site/source/stylesheets/partials/_structure.css.scss */
+    /* line 46, /Users/carolannbonner/dev/carolanncan/personal-site/source/stylesheets/partials/_structure.css.scss */
     .thumbnail:hover a {
       color: #945b00; }
-    /* line 92, /Users/carolannbonner/dev/carolanncan/personal-site/source/stylesheets/partials/_structure.css.scss */
+    /* line 50, /Users/carolannbonner/dev/carolanncan/personal-site/source/stylesheets/partials/_structure.css.scss */
     .thumbnail:hover i {
       border: 1px solid #c77a00;
       color: #c77a00;
       font-size: 1em;
       opacity: 1;
       visibility: visible; }
-  /* line 101, /Users/carolannbonner/dev/carolanncan/personal-site/source/stylesheets/partials/_structure.css.scss */
+  /* line 59, /Users/carolannbonner/dev/carolanncan/personal-site/source/stylesheets/partials/_structure.css.scss */
   .thumbnail img {
     width: 100%; }
-  /* line 105, /Users/carolannbonner/dev/carolanncan/personal-site/source/stylesheets/partials/_structure.css.scss */
+  /* line 63, /Users/carolannbonner/dev/carolanncan/personal-site/source/stylesheets/partials/_structure.css.scss */
   .thumbnail p {
     margin: 0 0 1em 0; }
   @media screen and (min-width: new-breakpoint(min-width 47.5em 4)) {
-    /* line 62, /Users/carolannbonner/dev/carolanncan/personal-site/source/stylesheets/partials/_structure.css.scss */
+    /* line 20, /Users/carolannbonner/dev/carolanncan/personal-site/source/stylesheets/partials/_structure.css.scss */
     .thumbnail {
       float: left;
       display: block;
@@ -2675,32 +2689,15 @@ nav.primary {
       .thumbnail:last-child {
         margin-right: 0; } }
 
-/* line 114, /Users/carolannbonner/dev/carolanncan/personal-site/source/stylesheets/partials/_structure.css.scss */
-footer.global {
-  padding: 4.5em 0 0 0;
-  background: #ebebeb;
-  border-top: 1px solid #d2d2d2;
-  min-height: 11.2em;
-  margin-top: 5em; }
-  /* line 122, /Users/carolannbonner/dev/carolanncan/personal-site/source/stylesheets/partials/_structure.css.scss */
-  footer.global ul li {
-    -webkit-transition: all 0.15s linear;
-    -moz-transition: all 0.15s linear;
-    transition: all 0.15s linear;
-    display: inline-block; }
-    /* line 126, /Users/carolannbonner/dev/carolanncan/personal-site/source/stylesheets/partials/_structure.css.scss */
-    footer.global ul li i {
-      font-size: 1.88em; }
-
-/* line 13, /Users/carolannbonner/dev/carolanncan/personal-site/source/stylesheets/all.scss */
+/* line 15, /Users/carolannbonner/dev/carolanncan/personal-site/source/stylesheets/all.scss */
 ::selection, ::-moz-selection {
-  background: rgba(75, 145, 9, 0.5); }
+  background: rgba(199, 122, 0, 0.5); }
 
-/* line 17, /Users/carolannbonner/dev/carolanncan/personal-site/source/stylesheets/all.scss */
+/* line 19, /Users/carolannbonner/dev/carolanncan/personal-site/source/stylesheets/all.scss */
 .wrap {
   padding: 0 12%; }
 
-/* line 21, /Users/carolannbonner/dev/carolanncan/personal-site/source/stylesheets/all.scss */
+/* line 23, /Users/carolannbonner/dev/carolanncan/personal-site/source/stylesheets/all.scss */
 .crop-circle {
   background-image: url("/images/cbonner_2014.jpg");
   background-image: url("/images/cbonner_2014.jpg");
@@ -2711,9 +2708,6 @@ footer.global {
   *vertical-align: auto;
   width: 12em;
   height: 12em;
-  -webkit-transition: all 0.15s linear;
-  -moz-transition: all 0.15s linear;
-  transition: all 0.15s linear;
   background-position: 70% 100%;
   background-repeat: no-repeat;
   background-size: 159%;
@@ -2723,43 +2717,3 @@ footer.global {
   border: 0.3125em solid white;
   border-radius: 50%;
   margin: 1.68em auto; }
-  /* line 36, /Users/carolannbonner/dev/carolanncan/personal-site/source/stylesheets/all.scss */
-  .crop-circle:hover {
-    background-size: 162%; }
-
-/* line 42, /Users/carolannbonner/dev/carolanncan/personal-site/source/stylesheets/all.scss */
-button {
-  border: 1px solid #804e00;
-  border-radius: 3px;
-  box-shadow: inset 0 1px 0 0 #f6a21e;
-  color: white;
-  display: inline-block;
-  font-size: 11px;
-  font-weight: bold;
-  background-color: #c77a00;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #c77a00), color-stop(100%, #8f5800));
-  background-image: -webkit-linear-gradient(#c77a00, #8f5800);
-  background-image: linear-gradient(#c77a00, #8f5800);
-  padding: 7px 18px;
-  text-decoration: none;
-  text-shadow: 0 1px 0 #6b4200;
-  background-clip: padding-box;
-  border-radius: 8px;
-  float: left;
-  margin: 1.875em 0; }
-  /* line 79, /Users/carolannbonner/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/bourbon-3.1.8/app/assets/stylesheets/addons/_button.scss */
-  button:hover:not(:disabled) {
-    box-shadow: inset 0 1px 0 0 #d98808;
-    cursor: pointer;
-    background-color: #aa6a03;
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #aa6a03), color-stop(100%, #804e00));
-    background-image: -webkit-linear-gradient(#aa6a03, #804e00);
-    background-image: linear-gradient(#aa6a03, #804e00); }
-  /* line 95, /Users/carolannbonner/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/bourbon-3.1.8/app/assets/stylesheets/addons/_button.scss */
-  button:active:not(:disabled) {
-    border: 1px solid #804e00;
-    box-shadow: inset 0 0 8px 4px #704500, inset 0 0 8px 4px #704500, 0 1px 1px 0 #eeeeee; }
-  /* line 38, /Users/carolannbonner/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/bourbon-3.1.8/app/assets/stylesheets/addons/_button.scss */
-  button:disabled {
-    opacity: 0.5;
-    cursor: not-allowed; }
