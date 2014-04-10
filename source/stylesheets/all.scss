@@ -9,10 +9,12 @@
 @import "neat";
 
 @import "partials/animations";
+@import "partials/footer";
+@import "partials/nav";
 @import "partials/structure";
 
 ::selection, ::-moz-selection {
-  background: rgba($secondary-c, 0.5);
+  background: rgba($secondary-a, 0.5);
 }
 
 .wrap {
@@ -23,7 +25,6 @@
   @include background-image(url("/images/cbonner_2014.jpg"));
   @include inline-block;
   @include size(12em);
-  @include transition(all .15s linear);
   background-position: 70% 100%;
   background-repeat: no-repeat;
   background-size: 159%;
@@ -33,16 +34,4 @@
   border: em(5) solid #fff;
   border-radius: 50%;
   margin: $base-line-height auto;
-
-  &:hover {
-    background-size: 162%;
-  }
-}
-
-//Elements
-button {
-  @include button (simple, $secondary-a);
-  border-radius: 8px;
-  float: left;
-  margin: em(30) 0;
 }

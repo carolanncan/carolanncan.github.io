@@ -1,0 +1,37 @@
+header.global {
+  @include position(fixed, 0px 0px 0 0px);
+  background: white;
+  border-bottom: 1px solid $neutral-light;
+  z-index: 1;
+}
+
+nav.primary {
+  height: $global-element-height;
+
+  ul.inline {
+    li {
+      @include pad(.7em);
+      @include transition(all .15s linear);
+      position: relative;
+
+      a {
+        &:after {
+          @include position(absolute, 100% 0 0 0px);
+          @include size(100% 3px);
+          @include transform(translateY(2px));
+          @include transition(all .15s linear);
+          background: $secondary-a;
+          content: '';
+          opacity: 0;
+        }
+
+        &:hover {
+          &:after {
+            opacity: 1;
+            @include transform(translateY(-6px));
+          }
+        }
+      }
+    }
+  }
+}
