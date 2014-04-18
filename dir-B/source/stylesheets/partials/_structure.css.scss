@@ -1,0 +1,70 @@
+section {
+  @include animation(fade-in 1s);
+  @include outer-container;
+}
+
+main {
+  margin-top: 5em;
+}
+
+.col {
+  @include span-columns(6);
+  @include pad(0 default);
+  margin: 1em 0;
+
+  @include media($medium-screen) {
+    @include span-columns (4);
+  }
+}
+
+.thumbnail {
+  @include size(60% 9em);
+  @include transition(all .15s linear);
+  border-bottom: 1px solid $neutral-light;
+  margin: 1em auto;
+  padding: 4% 0;
+
+  a {
+    color: $base-font-color;
+  }
+
+  i {
+    @include size(30px);
+    @include transition(all .15s linear);
+    border-radius: 50%;
+    border: 1px solid transparent;
+    opacity: 0;
+    padding-left: .1em;
+    padding-top: .15em;
+    visibility: hidden;
+  }
+
+  &:hover {
+    border-color: $secondary-a;
+    width: 65%;
+
+    a {
+      color: darken($secondary-a, 10);
+    }
+
+    i {
+      border: 1px solid $secondary-a;
+      color: $secondary-a;
+      font-size: 1em;
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  img {
+    @include fill-parent;
+  }
+
+  p {
+    margin: 0 0 1em 0;
+  }
+
+  @include media($medium-screen) {
+    @include span-columns (4);
+  }
+}

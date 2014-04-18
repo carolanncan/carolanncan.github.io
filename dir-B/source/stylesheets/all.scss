@@ -1,0 +1,37 @@
+//= require font-awesome
+@charset "utf-8";
+
+@import "normalize";
+
+@import "bourbon";
+@import "bitters/bitters";
+@import "bitters/grid-settings";
+@import "neat";
+
+@import "partials/animations";
+@import "partials/footer";
+@import "partials/nav";
+@import "partials/structure";
+
+::selection, ::-moz-selection {
+  background: rgba($secondary-a, 0.5);
+}
+
+.wrap {
+  @include pad(0 12%);
+}
+
+.crop-circle {
+  @include background-image(url("/images/cbonner_2014.jpg"));
+  @include inline-block;
+  @include size(12em);
+  background-position: 70% 100%;
+  background-repeat: no-repeat;
+  background-size: 159%;
+  box-shadow: 0 0 0 1px darken($neutral-light, 30%);
+  opacity: .9;
+  overflow: hidden;
+  border: em(5) solid #fff;
+  border-radius: 50%;
+  margin: $base-line-height auto;
+}

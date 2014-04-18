@@ -1,0 +1,18 @@
+footer.global {
+  @include pad(4.5em 0 0 0);
+  background: white;
+  border-top: $base-border;
+  min-height: $global-element-height * 4;
+  margin-top: 5em;
+
+  ul {
+    li {
+      @include transition(all .15s linear);
+      display: inline-block;
+
+      i {
+        font-size: 1.88em;
+      }
+    }
+  }
+}

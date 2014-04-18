@@ -1,0 +1,59 @@
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  &%default-ul {
+    list-style-type: circle;
+    margin-bottom: $base-line-height / 2;
+    padding-left: $base-line-height;
+  }
+
+  &%default-ol {
+    list-style-type: decimal;
+    margin-bottom: $base-line-height / 2;
+    padding-left: $base-line-height;
+  }
+}
+
+//(?)This seems hack-y. Got a question here for Monday!
+
+ul.inline {
+  li{
+    @include inline-block;
+    padding: .5em;
+  }
+}
+
+//(?) content:none not working on last-of-type
+
+.slash {
+ 
+  li {
+    @include inline-block;
+      
+      &:after {
+        color: lighten($black, 60%);
+        content: ' / ';
+        padding-left: 1em;
+      }
+      
+      &:last-of-type {
+        content: none;
+      }
+  }
+}
+
+dl {
+  line-height: $base-line-height;
+  margin-bottom: $base-line-height / 2;
+
+  dt {
+    font-weight: bold;
+    margin-top: $base-line-height / 2;
+  }
+
+  dd {
+    margin: 0;
+  }
+}

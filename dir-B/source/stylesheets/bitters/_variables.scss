@@ -1,0 +1,52 @@
+// Typography
+///////////////////////////////////////////////////////////////////////////////
+$radley: 'Radley', $georgia;
+$news-cycle: 'News Cycle', $helvetica;
+$sans-serif: $news-cycle;
+$serif: $radley;
+
+$base-font-family: $sans-serif;
+$header-font-family: $serif;
+
+// Sizes
+///////////////////////////////////////////////////////////////////////////////
+$base-font-size: 1.4em;
+$base-line-height: $base-font-size * 1.2;
+$base-border-radius: em(3);
+$global-element-height: 2.8em;
+
+// Colors
+///////////////////////////////////////////////////////////////////////////////
+
+$light-gray: #DDD;
+$light-red: #FBE3E4;
+$light-yellow: #FFF6BF;
+$light-green: #E6EFC2;
+
+$primary-a:#505655;
+$secondary-a:rgba(199,122,0,1);
+$secondary-b:rgba(242,102,31,1);
+$secondary-c:rgba(75,145,9,1);
+
+$neutral-light:rgba(235,235,235,1);
+$black:#3D3D29;
+
+// Body Color
+$base-body-color: white;
+
+//  Font Colors
+$base-font-color: $black;
+$base-accent-color: $secondary-a;
+
+//  Text Link Colors
+$base-link-color: $base-accent-color;
+$hover-link-color: darken($base-accent-color, 8);
+
+// Border
+$base-border:1px solid darken($neutral-light, 10%);
+$base-border-color: $light-gray;
+
+// Flash Colors
+$error-color: $light-red;
+$notice-color: $light-yellow;
+$success-color: $light-green;
