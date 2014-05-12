@@ -17,54 +17,45 @@ main {
   }
 }
 
-.thumbnail {
-  @include size(60% 9em);
-  @include transition(all .15s linear);
-  border-bottom: 1px solid $neutral-light;
-  margin: 1em auto;
-  padding: 4% 0;
+ul.work {
+  list-style: none;
 
-  a {
-    color: $base-font-color;
-  }
-
-  i {
-    @include size(30px);
+  li {
+    @include size(60% 9em);
     @include transition(all .15s linear);
-    border-radius: 50%;
-    border: 1px solid transparent;
-    opacity: 0;
-    padding-left: .1em;
-    padding-top: .15em;
-    visibility: hidden;
-  }
-
-  &:hover {
-    border-color: $secondary-a;
-    width: 65%;
+    border-bottom: 1px solid $neutral-light;
+    margin: 1em auto;
+    padding: 4% 0;
 
     a {
-      color: darken($secondary-a, 10);
+      color: $base-font-color;
     }
 
     i {
-      border: 1px solid $secondary-a;
-      color: $secondary-a;
-      font-size: 1em;
-      opacity: 1;
-      visibility: visible;
+      @include size(30px);
+      @include transition (border .15s ease-in);
+      @include transition(all .15s linear);
+      border-radius: 50%;
+      border: 1px solid transparent;
+      padding-left: .1em;
+      padding-top: .15em;
     }
-  }
 
-  img {
-    @include fill-parent;
-  }
+    &:hover {
+      border-color: $secondary-a;
+      width: 65%;
 
-  p {
-    margin: 0 0 1em 0;
-  }
+      a {
+        color: darken($secondary-a, 10);
+      }
 
-  @include media($medium-screen) {
-    @include span-columns (4);
+      i {
+        border: 1px solid $secondary-a;
+        color: $secondary-a;
+        font-size: 1em;
+        opacity: 1;
+        visibility: visible;
+      }
+    }
   }
 }
