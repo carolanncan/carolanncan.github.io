@@ -22,21 +22,6 @@
     </main>
 
    <%= partial "partials/footer" %>
-
-    <!-- Google Analytics -->
-    <script>
-      // Activate the Google page tracking code
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();  
-
-      // Track when a project is opened
-      $(document).bind("projectLoadStart", function(e, pid, href){
-        _gaq.push(['_trackPageview','/project/'+href[1]]);
-      });
-    </script>
-
+   <%= google_analytics_universal_tag %>
   </body>
 </html>

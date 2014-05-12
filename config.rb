@@ -4,6 +4,11 @@ activate :deploy do |deploy|
   deploy.method = :git
 end
 
+activate :google_analytics do |ga|
+  ga.tracking_id = 'UA-37617323-1'
+  ga.domain_name = 'carolannbonner.com'
+end
+
 activate :livereload
 
 set :build_dir, "tmp"
