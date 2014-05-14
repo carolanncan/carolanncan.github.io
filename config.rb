@@ -1,7 +1,7 @@
 activate :deploy do |deploy|
   deploy.method = :git
   deploy.branch   = "gh-pages"
-  deploy.strategy = :submodule
+  deploy.strategy = :force_push
   deploy.build_before = true
 end
 
