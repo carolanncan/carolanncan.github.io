@@ -1,7 +1,8 @@
 activate :deploy do |deploy|
-  deploy.branch   = "gh-pages"
-  deploy.build_before = true
   deploy.method = :git
+  deploy.branch   = "gh-pages"
+  deploy.strategy = :submodule
+  deploy.build_before = true
 end
 
 activate :google_analytics do |ga|
@@ -11,7 +12,6 @@ end
 
 activate :livereload
 
-#set :build_dir, "tmp"
 set :css_dir, 'stylesheets'
 set :js_dir, 'javascripts'
 set :images_dir, 'images'
