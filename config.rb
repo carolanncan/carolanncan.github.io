@@ -20,5 +20,5 @@ set :relative_links, true
 configure :build do
   activate :minify_css
   activate :minify_javascript
-  activate :relative_links
+  activate :relative_assets
 end
