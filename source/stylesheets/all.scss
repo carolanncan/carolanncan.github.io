@@ -22,7 +22,7 @@
 }
 
 .crop-circle {
-  @include background-image(url("/images/cbonner_2014.jpg"));
+  @include background-image(url("../images/cbonner_2014.jpg"));
   @include inline-block;
   @include size(12em);
   background-position: 70% 100%;
