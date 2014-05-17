@@ -6,8 +6,8 @@ activate :deploy do |deploy|
 end
 
 activate :google_analytics do |ga|
-  ga.tracking_id = 'UA-37617323-1'
-  ga.domain_name = 'carolannbonner.com'
+  ga.tracking_id = 'UA-51006708-1'
+  ga.domain_name = 'cbnnr.in'
 end
 
 activate :livereload
