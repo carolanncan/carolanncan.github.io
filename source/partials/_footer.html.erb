@@ -1,22 +1,33 @@
-<footer class="global">
-  <section>
-    <ul class="inline caps small-txt">
+<footer>
+  <nav>
+    <ul class='slash'>
       <li>
-        <% link_to 'http://github.com/carolanncan' do %>
-          <i class='fa fa-github'></i>
-        <% end %>
-      </li>
-
-      <li>
-        <% link_to 'http://twitter.com/carolanncan' do %>
-          <i class="fa fa-twitter"></i>
-        <% end %>
+        <%= link_to 'Projects', '../work.html'%>
       </li>
       <li>
-        <% link_to 'http://dribbble.com/carolanncan' do %>
-          <i class='fa fa-dribbble'></i>
-        <% end %>
+        <%= link_to 'About Me', '../about.html'%>
+      </li>
+      <li>
+        <%= link_to 'Home', '../index.html'%>
       </li>
     </ul>
-  </section>
+  </nav>
+  <ul class="social-media">
+    <li>
+      <% link_to 'http://github.com/carolanncan' do %>
+        <i class='fa fa-github'></i>
+      <% end %>
+    </li>
+
+    <li>
+      <% link_to 'http://twitter.com/carolanncan' do %>
+        <i class="fa fa-twitter"></i>
+      <% end %>
+    </li>
+    <li>
+      <% link_to 'http://dribbble.com/carolanncan' do %>
+        <i class='fa fa-dribbble'></i>
+      <% end %>
+    </li>
+  </ul>
 </footer>

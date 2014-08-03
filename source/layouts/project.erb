@@ -1,18 +1,18 @@
 ---
 layout: "project"
 ---
+
 <%= stylesheet_link_tag "all" %>
-
 <body>
-
   <% wrap_layout :layout do %>
     <section>
-      <%= yield %>
-      <hr class="double">
-      <h6>
-        <a href="work.html">Back to gallery</a>
-      </h6>
+      <div class="wrap">
+        <%= yield %>
+        <hr class="double">
+        <h6>
+          <a href="work.html">Back to gallery</a>
+        </h6>
+      </div>
     </section>
   <% end %>
-
 </body>

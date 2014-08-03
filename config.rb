@@ -1,3 +1,5 @@
+activate :livereload
+
 activate :deploy do |deploy|
   deploy.method = :git
   deploy.branch = "gh-pages"
@@ -9,8 +11,6 @@ activate :google_analytics do |ga|
   ga.tracking_id = 'UA-51006708-1'
   ga.domain_name = 'cbnnr.in'
 end
-
-activate :livereload
 
 set :css_dir, 'stylesheets'
 set :js_dir, 'javascripts'
