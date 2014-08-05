@@ -27,6 +27,8 @@ GEM
     execjs (1.4.0)
       multi_json (~> 1.0)
     ffi (1.9.3)
+    font-awesome-sass (4.1.0)
+      sass (~> 3.2)
     fssm (0.2.10)
     haml (4.0.5)
       tilt
@@ -117,6 +119,7 @@ PLATFORMS
 DEPENDENCIES
   bitters
   bourbon
+  font-awesome-sass
   middleman (~> 3.1.4)
   middleman-deploy
   middleman-google-analytics
