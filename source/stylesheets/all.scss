@@ -12,3 +12,33 @@
 @import "partials/footer";
 @import "partials/layout";
 @import "partials/components";
+
+$lists: ".carolann", ".lisa", ".don", ".steven", ".jeff";
+
+@each $list in $lists {
+  aside#{$list} {
+    padding: 10px 20px;
+    margin: 25px;
+    border: 1px solid pink;
+    display: inline-block;
+    background: lighten(pink, 10);
+  }
+}
+
+aside.greg {
+  background: lighten(green, 40);
+  padding: 0;
+}
+
+@each $list in $lists {
+  @function remove-nth($list, $index) {
+    result: length($lists)$index - 1;
+  }
+  aside.#{$list} {
+    padding: 0px 20px;
+    margin: 25px;
+    border: 1px solid blue;
+    display: inline-block;
+    background: lighten(blue, 43) !important;
+  }
+}
