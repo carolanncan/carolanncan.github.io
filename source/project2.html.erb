@@ -3,76 +3,85 @@ layout: "project"
 title: Laybull
 ---
 
-<h1>Laybull</h1>
-<h5>Facilitating Research through Machine Learning</h5>
-<h6>Brainchild of: Josh Guthrie</h6>
+<% data.projects.project.each do |project| %>
+  <h1 class="project-title"><%= project.title %></h1>
+  <h2><%= project.subtitle %></h2>
+<% end %>
 
-<hr>
+  <% data.laybull.laybull.each_with_index do |laybull, index| %>
+  <h1><%= laybull.caption %></h1>
+<% end %>
 
-<p>
-  Playing off of the word &ldquo;label&rdquo;, Laybull is an application that turns the &ldquo;lay&rdquo;
-  person into a powerful tool for machine learning and artificial intelligence. I
-  partenered with a developer who originated the idea for this app. We think we
-  have created an extremely efficient workflow for a very cumbersome task.
-</p>
-
-<p>
-  Our next step is to begin user-testing on our prototype.
-</p>
-
-<figure>
-  <img src="images/portfolio/lbl/01.png">
-  <figcaption>
-    <p>
-      Machine learning is an area of artificial intelligence. The goal of machine
-      learning is to be able to make predictions about pieces of data based on
-      attributes a machine has learned from a defined set of data.
-    </p>
-  </figcaption>
-</figure>
-
-<figure>
-  <img src="images/portfolio/lbl/02.png">
-  <img src="images/portfolio/lbl/03.png">
-  <figcaption>
-    <p>
-      We spent about 2 months getting down the user needs and priorities before we
-      began putting a workflow into wireframes.
-    </p>
-  </figcaption>
-</figure>
-
-<figure>
-  <img src="images/portfolio/lbl/04.png">
-  <figcaption>
-    <p>
-    Creating the interface for the labels (get it, Laybull?), menu was the big
-    challenge. Generally, most projects have a simple tree of labels that only have
-    one level of decendants (if that). We wanted to nurture projects that have a
-    small or large amount of labels with varying levels of decendants.
-    </p>
-  </figcaption>
-</figure>
-
-<figure>
-  <img src="images/portfolio/lbl/05.png">
-  <figcaption>
-  <p>
-    <strong>One tap</strong> = apply label to selection. <strong>Swipe
-      left</strong> = apply parent label to selection and view children of parent
-    label to either apply to selection or simply tap outside of the menu to get
-    back to your data.
-  </p>
-  </figcaption>
-</figure>
-
-<figure>
-  <img src="images/portfolio/lbl/06.png">
-  <figcaption>
-    <p>
-      I've done a few initial sketches of possible logo options. We want to convey
-      strength, power, and agility, since these are the most important benefits of
-      using the app.
-    </p>
-  </figcaption>
-</figure>
+<!-- <h1>Laybull</h1> -->
+<!-- <h5>Facilitating Research through Machine Learning</h5> -->
+<!-- <h6>Brainchild of: Josh Guthrie</h6> -->
+<!--  -->
+<!-- <hr> -->
+<!--  -->
+<!-- <p> -->
+<!--   Playing off of the word &#38;ldquo;label&#38;rdquo;, Laybull is an application that turns the &#38;ldquo;lay&#38;rdquo; -->
+<!--   person into a powerful tool for machine learning and artificial intelligence. I -->
+<!--   partenered with a developer who originated the idea for this app. We think we -->
+<!--   have created an extremely efficient workflow for a very cumbersome task. -->
+<!-- </p> -->
+<!--  -->
+<!-- <p> -->
+<!--   Our next step is to begin user&#45;testing on our prototype. -->
+<!-- </p> -->
+<!--  -->
+<!-- <figure> -->
+<!--   <img src="images/portfolio/lbl/01.png"> -->
+<!--   <figcaption> -->
+<!--     <p> -->
+<!--       Machine learning is an area of artificial intelligence. The goal of machine -->
+<!--       learning is to be able to make predictions about pieces of data based on -->
+<!--       attributes a machine has learned from a defined set of data. -->
+<!--     </p> -->
+<!--   </figcaption> -->
+<!-- </figure> -->
+<!--  -->
+<!-- <figure> -->
+<!--   <img src="images/portfolio/lbl/02.png"> -->
+<!--   <img src="images/portfolio/lbl/03.png"> -->
+<!--   <figcaption> -->
+<!--     <p> -->
+<!--       We spent about 2 months getting down the user needs and priorities before we -->
+<!--       began putting a workflow into wireframes. -->
+<!--     </p> -->
+<!--   </figcaption> -->
+<!-- </figure> -->
+<!--  -->
+<!-- <figure> -->
+<!--   <img src="images/portfolio/lbl/04.png"> -->
+<!--   <figcaption> -->
+<!--     <p> -->
+<!--     Creating the interface for the labels (get it, Laybull?), menu was the big -->
+<!--     challenge. Generally, most projects have a simple tree of labels that only have -->
+<!--     one level of decendants (if that). We wanted to nurture projects that have a -->
+<!--     small or large amount of labels with varying levels of decendants. -->
+<!--     </p> -->
+<!--   </figcaption> -->
+<!-- </figure> -->
+<!--  -->
+<!-- <figure> -->
+<!--   <img src="images/portfolio/lbl/05.png"> -->
+<!--   <figcaption> -->
+<!--   <p> -->
+<!--     <strong>One tap</strong> = apply label to selection. <strong>Swipe -->
+<!--       left</strong> = apply parent label to selection and view children of parent -->
+<!--     label to either apply to selection or simply tap outside of the menu to get -->
+<!--     back to your data. -->
+<!--   </p> -->
+<!--   </figcaption> -->
+<!-- </figure> -->
+<!--  -->
+<!-- <figure> -->
+<!--   <img src="images/portfolio/lbl/06.png"> -->
+<!--   <figcaption> -->
+<!--     <p> -->
+<!--       I've done a few initial sketches of possible logo options. We want to convey -->
+<!--       strength, power, and agility, since these are the most important benefits of -->
+<!--       using the app. -->
+<!--     </p> -->
+<!--   </figcaption> -->
+<!-- </figure> -->

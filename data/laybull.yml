@@ -1,0 +1,28 @@
+laybull:
+  - caption: 'Brainchild of: Josh Guthrie'
+    introduction: 'Playing off of the word &ldquo;label&rdquo;, Laybull is an
+      application that turns the &ldquo;lay&rdquo; person into a powerful
+      tool for machine learning and artificial intelligence. I partenered
+      with a developer who originated the idea for this app. We think we have
+      created an extremely efficient workflow for a very cumbersome task.
+      <br /> Our next step is to begin user-testing on our prototype.'
+    figure:
+      one: '<img src="images/portfolio/lbl/01.png">'
+      two: '<img src="images/portfolio/lbl/02.png">'
+      three: '<img src="images/portfolio/lbl/03.png">'
+      four: '<img src="images/portfolio/lbl/04.png">'
+      five: '<img src="images/portfolio/lbl/05.png">'
+      six: '<img src="images/portfolio/lbl/06.png">'
+    figcaption:
+      one: 'Creating the interface for the labels (get it, Laybull?), menu
+        was the big challenge. Generally, most projects have a simple tree of
+        labels that only have one level of decendants (if that). We wanted to
+        nurture projects that have a small or large amount of labels with
+        varying levels of decendants.'
+      two: '<strong>One tap</strong> = apply label to selection.
+        <strong>Swipe left</strong> = apply parent label to selection and
+        view children of parent label to either apply to selection or simply
+        tap outside of the menu to get back to your data.'
+      three: 'Initial sketches of possible logo options. We want to convey
+        strength, power, and agility, since these are the most important
+        benefits of using the app.'

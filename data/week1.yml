@@ -1,0 +1,35 @@
+unit:
+  - title: 'Build Measure Learn'
+
+lectures:
+  - title: 'Intro to Course'
+    day: 'Monday'
+    link: '../lectures/intro-course.html'
+  - title: 'Tools of the Trade'
+    day: 'Tuesday'
+    link: '../lectures/tools.html'
+  - title: 'Problem-solving'
+    day: 'Wednesday'
+    link: '../lectures/problem-solving.html'
+  - title: 'Web Fundamentals'
+    day: 'Thursday'
+    link: '../lectures/web-fundamentals.html'
+
+exercises:
+  - title: 'Biography Page'
+    description: 'Create a one-page, biographical website using HTML and CSS.
+      Deploy the site using GitHub Pages. Include content (text and images)
+      that you would use on a portfolio or blog in the future. Design your site
+      to best suit that content.'
+    deliverables:
+      - A single HTML file styled with CSS.
+      - Live link to site deployed on GitHub Pages.
+    rubric:
+      - How do people get in touch with you?
+      - Who is it that you’re looking to start conversations with?
+      - What is it you’re trying to highlight with past work?
+      - How might you best emphasize your strengths?
+      - How do you use HTML semantics to structure content?
+      - When writing your CSS, how can you structure it to allow for future growth?
+      - Bonus - Send your portfolio to fellow designers for review.
+
