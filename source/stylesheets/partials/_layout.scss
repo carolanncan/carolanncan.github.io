@@ -43,7 +43,7 @@ main {
         background: white;
 
         &:before {
-          @include transform(translateX(10px));
+          @include transform(translateX(5px));
           opacity: 1;
         }
       }
