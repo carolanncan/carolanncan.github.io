@@ -36,7 +36,7 @@ main {
     }
 
     &:hover {
-      @include transition(all .2s linear);
+      @include transition(all .5s linear);
       border-color: darken($base-border-color, 10);
 
       h4 {
@@ -59,7 +59,7 @@ main {
   &:before {
     @include position(relative, 0px 34px 0 0);
     @include transition(all .2s linear);
-    content: '\f105';
+    // content: '\f105';
     font-family: $icon;
     opacity: 0;
     display: inline-block;
