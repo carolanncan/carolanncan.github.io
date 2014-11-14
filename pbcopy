@@ -1,0 +1,8 @@
+  <%# <% data.projects.project.each_with_index do |project, index| %>
+  <%#   <li>
+  <%#   <% link_to '#{project.link}.html' do %>
+  <%#       <h4 class="project-title"><%= project.title %></h4>
+  <%#       <h6><%= project.subtitle %></h6>
+  <%#     <% end %>
+  <%#   </li>
+  <%# <% end %>

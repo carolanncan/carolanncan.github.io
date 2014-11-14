@@ -1,10 +1,14 @@
 project:
   - title: 'Giant Robots'
     subtitle: 'Redesign of thoughtbot blog'
+    link: 'project4'
   - title: 'Laybull.it'
     subtitle: 'Facilitating Research through Machine
       Learning'
+    link: 'project2.html'
   - title: 'Cedar Hill'
     subtitle: 'Cedar Hill Identity Rebrand'
+    link: 'project3.html'
   - title: 'Zeus'
     subtitle: 'Measuring team workload in a friendly way!'
+    link: 'project1.html'

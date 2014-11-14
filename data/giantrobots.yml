@@ -1,0 +1,8 @@
+<% data.projects.project.each do |project| %>
+  <h1 class="project-title"><%= project.title %></h1>
+  <h2><%= project.subtitle %></h2>
+<% end %>
+
+  <% data.laybull.laybull.each_with_index do |laybull, index| %>
+  <h1><%= laybull.caption %></h1>
+<% end %>
