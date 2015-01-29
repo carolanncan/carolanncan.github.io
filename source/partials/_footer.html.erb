@@ -40,20 +40,4 @@
       network: link.getAttribute('network')
     };
   });
-
-  mixpanel.track_links('.social-link', 'Clicked Social Link', function(link){
-    return {
-      network: link.getAttribute('network')
-    };
-  });
-
-  var downloadLinks = document.getElementsByClassName('social-link');
-  addListener(downloadLinks, 'Clicked Social Link', function() {
-    ga('send', 'event', 'category', 'action', 'social link')
-  });
-
-  function addListener(element, type, callback) {
-  if (element.addEventListener) element.addEventListener(type, callback);
-  else if (element.attachEvent) element.attachEvent('on' + type, callback);
-  }
 </script>
