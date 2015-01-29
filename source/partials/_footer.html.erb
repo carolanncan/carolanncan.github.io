@@ -14,20 +14,30 @@
   </nav>
   <ul class="social-media">
     <li>
-      <% link_to 'http://github.com/carolanncan' do %>
+      <% link_to 'http://github.com/carolanncan', class: 'social-link', network: 'github' do %>
         <i class='fa fa-github'></i>
       <% end %>
     </li>
 
     <li>
-      <% link_to 'http://twitter.com/carolanncan' do %>
+      <% link_to 'http://twitter.com/carolanncan', class: 'social-link', network: 'twitter' do %>
         <i class="fa fa-twitter"></i>
       <% end %>
     </li>
     <li>
-      <% link_to 'http://dribbble.com/carolanncan' do %>
+      <% link_to 'http://dribbble.com/carolanncan', class: 'social-link', network: 'dribbble' do %>
         <i class='fa fa-dribbble'></i>
       <% end %>
     </li>
   </ul>
 </footer>
+
+<script>
+  var links = document.getElementsByClassName('social-link');
+
+  analytics.trackLink(links, 'Clicked Social Link', function(link){
+    return {
+      network: link.getAttribute('network')
+    };
+  }); 
+</script>
