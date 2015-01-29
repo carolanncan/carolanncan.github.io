@@ -49,7 +49,7 @@
 
   var downloadLinks = document.getElementsByClassName('social-link');
   addListener(downloadLinks, 'Clicked Social Link', function() {
-    ga('send', 'event', 'button', 'click', 'social-link')
+    ga('send', 'event', 'category', 'action', 'social link')
   });
 
   function addListener(element, type, callback) {
