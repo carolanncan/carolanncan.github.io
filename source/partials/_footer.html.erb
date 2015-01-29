@@ -40,4 +40,10 @@
       network: link.getAttribute('network')
     };
   }); 
+
+  mixpanel.track_links(".social-link", "Clicked Social Link", function(link){
+    return {
+      network: link.getAttribute('network')
+    };
+  });
 </script>
