@@ -3,43 +3,16 @@ title: Projects
 ---
 
 <h1>Projects</h1>
-<h2>Some of my favorites.</h2>
 
 <hr class="double">
 
 <ul class="projects">
+  <% data.projects.project.each_with_index do |project, index| %>
     <li>
-      <% link_to 'project4.html' do %>
-        <h4 class="project-title">Giant Robots</h4>
-        <h6>Redesign of the thoughtbot Blog</h6>
+    <% link_to project.link + ".html" do %>
+        <h4 class="project-title"><%= project.title %></h4>
+        <h6><%= project.subtitle %></h6>
       <% end %>
     </li>
-    <li>
-      <% link_to 'project2.html' do %>
-        <h4 class="project-title">Laybull</h4>
-        <h6>Machine learning application</h6>
-      <% end %>
-    </li>
-
-    <li>
-      <% link_to 'project3.html' do %>
-        <h4 class="project-title">Zeus</h4>
-        <h6>Team bandwidth management</h6>
-      <% end %>
-    </li>
-
-    <li>
-      <% link_to 'project1.html' do %>
-        <h4 class="project-title">Cedar Hill</h4>
-        <h6>City rebrand</h6>
-      <% end %>
-    </li>
-  <%# <% data.projects.project.each_with_index do |project, index| %>
-  <%#   <li>
-  <%#   <% link_to '#{project.link}.html' do %>
-  <%#       <h4 class="project-title"><%= project.title %></h4>
-  <%#       <h6><%= project.subtitle %></h6>
-  <%#     <% end %>
-  <%#   </li>
-  <%# <% end %>
+  <% end %>
 </ul>
