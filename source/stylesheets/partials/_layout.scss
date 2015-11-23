@@ -1,6 +1,17 @@
+html {
+  border: 9px solid white;
+}
+
 body {
   background: $base-body-color;
+  visibility: hidden;
 }
+
+.animate {
+  animation-name: fade-in;
+  visibility: visible;
+}
+
 
 section {
   @include animation(fade-in 1s);
