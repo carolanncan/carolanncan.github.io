@@ -19,11 +19,11 @@ $nav-height: 2.8em;
 
 // Colors
 $light-gray: #DDD;
-$brown: rgba(199,122,0,1);
+$brown: #8E6E28;
 $red: #E03267;
 $green: #30AB7F;
 $blue: #3098AB;
-$neutral: #EFF1ED;
+$neutral: rgba(233, 236, 236, 1);
 $black: #172431;
 $purple: #151424;
 

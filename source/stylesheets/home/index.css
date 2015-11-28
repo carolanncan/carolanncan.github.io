@@ -1,27 +1,5 @@
-.index {
-  background-image: linear-gradient(to bottom, $purple 0%, $black 100%);
-  color: $neutral;
-  height: 100vh;
-  position: relative;
-  z-index: 1;
-}
-
-.index:after {
-  background-image: url('../images/backpack.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  content: '';
-  height: 100vh;
-  left:0;
-  opacity: .04;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  z-index: -1;
-}
-
 .site-title {
+  color: $neutral;
   font-size: 2em;
   margin-top: 5em;
 }
@@ -35,3 +13,10 @@
   width: 1.5em;
 }
 
+.index h2 {
+  color: $green;
+}
+
+.index .text-wrap {
+  width: 65%;
+}
