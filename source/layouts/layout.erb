@@ -6,25 +6,25 @@
     <%= favicon_tag 'images/favicon.png' %>
     <link href='//fonts.googleapis.com/css?family=Sorts+Mill+Goudy:400,400italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
-    <script type="text/javascript">
-        analytics.load("bBbyS6PQFBo0E49VhVcBk46pPGxJXj5q");
-          analytics.page()
-              }}();
-    </script>
+    <!-- <script type="text/javascript"> -->
+    <!--     analytics.load("bBbyS6PQFBo0E49VhVcBk46pPGxJXj5q"); -->
+    <!--     analytics.page() { }(); -->
+    <!-- </script> -->
+
     <script type="text/javascript">
       function load() {
-        console.log("load event detected!");
         var d = document.getElementById("body");
         d.className = d.className + " animate";
       }
       window.onload = load;
     </script>
+
     <script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
     <title><%= current_page.data.title || "Carolann" %></title>
     <%= stylesheet_link_tag "all" %>
   </head>
   <body id="body">
-    <div class="<%= page_classes %>">
+    <div class="<%= page_classes %> parallax">
       <%= yield %>
      <%= partial "partials/footer" %>
     </div>

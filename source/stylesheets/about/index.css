@@ -15,14 +15,36 @@ body .about {
   width: 13em;
 }
 
+.parallax {
+  perspective: 1px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.parallax__layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.parallax__group {
+  position: relative;
+  height: 100vh;
+  transform-style: preserve-3d;
+  transform: translate3d(700px, 0, -800px) rotateY(30deg);
+}
+
 .about .header {
   background-image: linear-gradient(to bottom, $purple 0%, $black 100%);
   color: $neutral;
-  height: 500px;
+  height: 525px;
   position: relative;
   z-index: 1;
   border-bottom: 9px solid white;
   margin-bottom: 3em;
+  transform: translateZ(0);
 }
 
 .about .header .wrap {
@@ -41,13 +63,22 @@ body .about {
   background-repeat: no-repeat;
   background-size: cover;
   content: '';
-  height: 500px;
+  height: 525px;
   left:0;
   opacity: .1;
   position: absolute;
   top: 0;
   width: 100%;
   z-index: -1;
+}
+
+.learned {
+  background: url(../images/carolann.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* min-height: 1000px; */
+  transform: translateZ(-1px) scale(2);
 }
 
 .social-media {
