@@ -1,6 +1,6 @@
 .index {
   background-image: linear-gradient(to bottom, $purple 0%, $black 100%);
-  border: 9px solid $neutral;
+  color: $neutral;
   height: 100vh;
   position: relative;
   z-index: 1;
@@ -21,6 +21,6 @@
   z-index: -1;
 }
 
-.index main {
-  margin-top: 10em;
+.index .wrap {
+  padding-top: 13em;
 }

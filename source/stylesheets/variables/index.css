@@ -18,10 +18,6 @@ $nav-height: 2.8em;
 
 // Colors
 $light-gray: #DDD;
-$light-red: #FBE3E4;
-$light-yellow: #FFF6BF;
-$light-green: #E6EFC2;
-
 $brown: rgba(199,122,0,1);
 
 $neutral: #EFF1ED;
@@ -36,7 +32,7 @@ $base-body-color: $purple;
 // $base-font-color: $black;
 $base-font-color: $black;
 $base-accent-color: $brown;
-$light-font-color: darken($light-gray, 22);
+$light-font-color: darken($neutral, 22);
 
 //  Text Link Colors
 $base-link-color: $base-accent-color;
