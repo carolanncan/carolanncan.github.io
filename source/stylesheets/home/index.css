@@ -14,13 +14,24 @@
   content: '';
   height: 100vh;
   left:0;
-  opacity: .1;
+  opacity: .04;
   position: absolute;
   top: 0;
   width: 100%;
   z-index: -1;
 }
 
-.index .wrap {
-  padding-top: 13em;
+.site-title {
+  font-size: 2em;
+  margin-top: 5em;
 }
+
+.site-title:after {
+  background-color: $neutral;
+  content: '';
+  display: block;
+  height: 2px;
+  margin: 1.5em 0;
+  width: 1.5em;
+}
+

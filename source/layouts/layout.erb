@@ -6,6 +6,7 @@
     <%= favicon_tag 'images/favicon.png' %>
     <link href='//fonts.googleapis.com/css?family=Sorts+Mill+Goudy:400,400italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
     <!-- <script type="text/javascript"> -->
     <!--     analytics.load("bBbyS6PQFBo0E49VhVcBk46pPGxJXj5q"); -->
     <!--     analytics.page() { }(); -->
@@ -25,8 +26,8 @@
   </head>
   <body id="body">
     <div class="<%= page_classes %> parallax">
+      <%= partial "partials/footer" %>
       <%= yield %>
-     <%= partial "partials/footer" %>
     </div>
   </body>
 </html>
