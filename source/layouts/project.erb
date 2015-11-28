@@ -4,14 +4,9 @@ layout: "project"
 
 <% wrap_layout :layout do %>
   <main>
-      <section>
-        <div class="wrap">
-          <%= yield %>
-          <hr class="double">
-          <h6>
-            <a href="/work.html">Back to gallery</a>
-          </h6>
-        </div>
-      </section>
+    <div class="wrap">
+      <%= yield %>
+      <h6><a href="/work.html">Back to gallery</a></h6>
+    </div>
   </main>
 <% end %>
