@@ -1,0 +1,26 @@
+.index {
+  background-image: linear-gradient(to bottom, $purple 0%, $black 100%);
+  border: 9px solid $neutral;
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+}
+
+.index:after {
+  background-image: url('../images/backpack.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  content: '';
+  height: 100vh;
+  left:0;
+  opacity: .1;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.index main {
+  margin-top: 10em;
+}

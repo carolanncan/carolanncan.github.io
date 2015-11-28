@@ -3,12 +3,11 @@
 
 @import "normalize";
 
-@import "bourbon";
-@import "bitters/bitters";
-@import "bitters/grid-settings";
-@import "neat";
+@import "variables/index";
+@import "shared/index";
+@import "shared/lists";
+@import "animation/index";
 
-@import "partials/animations";
-@import "partials/footer";
-@import "partials/layout";
-@import "partials/components";
+@import "home/index";
+@import "project/index";
+@import "work/index";
