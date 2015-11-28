@@ -2,6 +2,7 @@ project:
   - title: 'Segment.com'
     subtitle: 'The new Segment.com'
     link: 'segment-website'
+    image: '../images/carolann.jpg'
   - title: 'Segment blog'
     subtitle: 'Redesign of the Segment blog'
     link: 'segment-blog'

@@ -22,7 +22,7 @@ $light-gray: #DDD;
 $brown: #8E6E28;
 $red: #E03267;
 $green: #30AB7F;
-$blue: #3098AB;
+$blue: #0D81DA;
 $neutral: rgba(233, 236, 236, 1);
 $black: #172431;
 $purple: #151424;
@@ -32,7 +32,7 @@ $base-body-color: $purple;
 $base-body-color: $purple;
 
 //  Font Colors
-$base-font-color: $black;
+$base-font-color: $neutral;
 $base-accent-color: $blue;
 $light-font-color: darken($neutral, 22);
 
