@@ -23,10 +23,11 @@ $light-green: #E6EFC2;
 $brown: rgba(199,122,0,1);
 
 $neutral: #EFF1ED;
-$black: #3D3D29;
+$black: rgba(61, 61, 41, 1);
+$purple: rgba(87, 89, 103, 1);
 
 // Body Color
-$base-body-color: #575967;
+$base-body-color: $purple;
 
 //  Font Colors
 // $base-font-color: $black;
