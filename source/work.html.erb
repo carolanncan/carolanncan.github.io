@@ -9,10 +9,10 @@ title: Projects
 <ul class="projects">
   <% data.projects.project.each_with_index do |project, index| %>
     <li>
-    <% link_to "/projects/" + project.link + ".html" do %>
-        <h4 class="project-title"><%= project.title %></h4>
-        <h6><%= project.subtitle %></h6>
+      <% link_to "/projects/" + project.link + ".html" do %>
+        <h2 class="project-title"><%= project.title %></h2>
       <% end %>
+        <h6><%= project.subtitle %></h6>
     </li>
   <% end %>
 </ul>
