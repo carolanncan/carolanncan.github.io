@@ -6,6 +6,7 @@ ul, ol {
 
 .nav {
   text-align: right;
+  padding-top: 2em;
 }
 
 .nav li {
