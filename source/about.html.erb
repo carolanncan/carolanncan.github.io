@@ -2,65 +2,64 @@
 title: About Me
 ---
 
-<header class="header parallax__layer parallax__layer--base">
-  <div class="wrap">
-    <h1>Hi, I'm Carolann.</h1>
-    <h2>A few of my favorite things</h2>
-    <ul class="slash">
-      <li>Hip-hop</li>
-      <li>Design</li>
-      <li>Science Fiction</li>
-      <li>Jokes</li>
-    </ul>
-  </div>
-</header>
 <div class="wrap">
-  <h2>What I've learned about design</h2>
-  <hr class="double">
-  <div class="text-wrap">
+  <div class="crop-circle"></div>
+  <header class="text-wrap">
+      <h1 class="page-title">Hi, I'm Carolann.</h1>
+      <h6>A few of my favorite things</h6>
+      <ul class="favorite-things">
+        <li>Hip-hop</li>
+        <li>Design</li>
+        <li>Science Fiction</li>
+        <li>Jokes</li>
+      </ul>
+  </header>
+
+  <section class="design-things text-wrap">
+    <h6>A few things I've learned about design</h6>
     <h3>Design is a team sport.</h3>
-    <p>
+    <p class="design-things-description">
       My role as a designer is not to have all the answers but to combine my
-      expertise with the that of everyone around me.
+      exp class="design-things-description"ertise with the that of everyone around me.
     </p>
-    <hr class="tiny">
+    <hr>
     <h3>Start by asking questions.</h3>
-    <p>
+    <p class="design-things-description">
       Ask "why" as many times as you have to in order to get to the root of a
-      problem or the true reason behind a decision.
+      p class="design-things-description"roblem or the true reason behind a decision.
     </p>
-    <h3>Communication is really important.</h3>
-    <p>
+    <hr>
+    <h3>Communication is critical.</h3>
+    <p class="design-things-description">
       Being able to explain the "why" behind a decision helps everyone around
       you contribute to the design process and work together toward the same
       goal.
     </p>
-  </div>
-  <section class="learned parallax__layer parallax__layer--back"></section>
+  </section>
 
-  <hr >
+  <footer class="contact-info">
+    <blockquote class="small-txt">
+      &ldquo;Each of us is phenomenal.&rdquo; &#8212;Angelou
+    </blockquote>
 
-  <blockquote class="small-txt">
-    &ldquo;Each of us is phenomenal.&rdquo; &#8212;Angelou
-  </blockquote>
-
-  <ul class="social-media">
-    <li>
-      <% link_to 'http://github.com/carolanncan', class: 'social-link', network: 'github' do %>
-        <i class='fa fa-github'></i>
-      <% end %>
-    </li>
-    <li>
-      <% link_to 'http://twitter.com/carolanncan', class: 'social-link', network: 'twitter' do %>
-        <i class="fa fa-twitter"></i>
-      <% end %>
-    </li>
-    <li>
-      <% link_to 'http://dribbble.com/carolanncan', class: 'social-link', network: 'dribbble' do %>
-        <i class='fa fa-dribbble'></i>
-      <% end %>
-    </li>
-  </ul>
+    <ul class="social-media">
+      <li>
+        <% link_to 'http://github.com/carolanncan', class: 'social-link', network: 'github' do %>
+          <i class='fa fa-github'></i>
+        <% end %>
+      </li>
+      <li>
+        <% link_to 'http://twitter.com/carolanncan', class: 'social-link', network: 'twitter' do %>
+          <i class="fa fa-twitter"></i>
+        <% end %>
+      </li>
+      <li>
+        <% link_to 'http://dribbble.com/carolanncan', class: 'social-link', network: 'dribbble' do %>
+          <i class='fa fa-dribbble'></i>
+        <% end %>
+      </li>
+    </ul>
+  </footer>
 </div>
 
 <script>

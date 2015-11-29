@@ -1,20 +1,12 @@
+body .index {
+  height: 100vh;
+}
+
 .site-title {
-  color: $neutral;
-  font-size: 2em;
-  margin-top: 5em;
-}
-
-.site-title:after {
-  background-color: $neutral;
-  content: '';
-  display: block;
-  height: 2px;
-  margin: 1.5em 0;
-  width: 1.5em;
-}
-
-.index h2 {
-  color: $brown;
+  color: $purple;
+  font-size: 3.5em;
+  letter-spacing: -1px;
+  margin-top: 2em;
 }
 
 .index .text-wrap {

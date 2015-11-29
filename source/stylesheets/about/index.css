@@ -1,5 +1,12 @@
-body .about {
-  background-color: $neutral;
+.about .text-wrap {
+  width: 55%;
+}
+
+.about h6 {
+  margin: 2.5em 0 1em;
+}
+
+.about h3 {
 }
 
 .crop-circle {
@@ -8,77 +15,39 @@ body .about {
   background-repeat: no-repeat;
   background-size: 180%;
   border-radius: 50%;
-  border: 5px solid rgba($purple, .5);
-  margin: 0 auto;
+  border: 2px solid white;
+  margin: 0;
   overflow: hidden;
-  height: 13em;
-  width: 13em;
+  height: 11em;
+  width: 11em;
 }
 
-.parallax {
-  perspective: 1px;
-  height: 100vh;
-  overflow-x: hidden;
-  overflow-y: auto;
-}
-.parallax__layer {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-
-.parallax__group {
-  position: relative;
-  height: 100vh;
-  transform-style: preserve-3d;
-  transform: translate3d(700px, 0, -800px) rotateY(30deg);
-}
-
-.about .header {
-  background-image: linear-gradient(to bottom, $purple 0%, $black 100%);
-  color: $neutral;
-  height: 525px;
-  position: relative;
-  z-index: 1;
-  border-bottom: 9px solid white;
+.favorite-things {
   margin-bottom: 3em;
-  transform: translateZ(0);
 }
 
-.about .header .wrap {
-  padding: 10em 0 0;
+.favorite-things li {
+  display: inline-block;
+  font-size: $base-font-size * 1.2;
+  font-size: 1.1em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
-.about .text-wrap {
-  width: 60%;
-  text-align: left;
+.favorite-things li:after {
+  color: white;
+  content: '/';
+  display: inline-block;
+  font-weight: 700;
+  margin: 0 1.3em;
 }
 
-
-.about .header:after {
-  background-image: url('../images/backpack.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.favorite-things li:last-of-type:after {
   content: '';
-  height: 525px;
-  left:0;
-  opacity: .1;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  z-index: -1;
 }
 
-.learned {
-  background: url(../images/carolann.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  /* min-height: 1000px; */
-  transform: translateZ(-1px) scale(2);
+.design-things-description {
+  margin-top: 0;
 }
 
 .social-media {
@@ -97,5 +66,5 @@ body .about {
 }
 
 .social-media i:hover {
-  color: $black;
+  color: $base-accent-color;
 }

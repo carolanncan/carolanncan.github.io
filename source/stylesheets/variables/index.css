@@ -4,8 +4,9 @@ $mill: 'Sorts Mill Goudy', Georgia, serif;
 $news-cycle: 'News Cycle', geneva, helvetica, sans-serif;
 $lato: 'Lato', geneva, helvetica, sans-serif;
 $montserrat: 'Montserrat', sans-serif;
+$karla: 'Karla', sans-serif;
 $serif: $mill;
-$sans: $montserrat;
+$sans: $karla;
 $icon: 'FontAwesome';
 
 $base-font-family: $sans;
@@ -24,21 +25,20 @@ $red: #E03267;
 $green: #30AB7F;
 $blue: #0D81DA;
 $neutral: rgba(233, 236, 236, 1);
-$black: #172431;
+$black: #3F4A52;
 $purple: #151424;
 
 // Body Color
 $base-body-color: $purple;
-$base-body-color: $purple;
 
 //  Font Colors
-$base-font-color: $neutral;
+$base-font-color: $black;
 $base-accent-color: $blue;
 $light-font-color: darken($neutral, 22);
 
 //  Text Link Colors
 $base-link-color: $base-accent-color;
-$hover-link-color: darken($base-accent-color, 5);
+$hover-link-color: $brown;
 
 // Border
 $base-border:1px solid darken($neutral, 10%);
