@@ -16,7 +16,7 @@
 .project-link {
   border: 3px solid white;
   margin: 1em 1em 0 0;
-  min-height: 200px;
+  min-height: 100px;
   padding: 1.75em;
   position: relative;
 }
@@ -31,7 +31,7 @@
   display: inline-block;
   font-size: 1.4em;
   position: relative;
-  transform: translateY(80px);
+  transform: translateY(50%);
   transition: all .2s ease-in-out;
 }
 
@@ -53,8 +53,8 @@
 }
 
 .project-link:hover .project-title {
-  transition-delay: .05s;
-  transform: translateY(78px);
+  transition-delay: .02s;
+  transform: translateY(43%);
 }
 
 .project-subtitle {
@@ -63,11 +63,11 @@
   line-height: 1.2;
   margin-top: 1.5em;
   opacity: 0;
-  transform: translateY(66px);
+  transform: translateY(10%);
   transition: all .1s ease-in-out;
 }
 
 .project-link:hover .project-subtitle {
   opacity: 1;
-  transform: translateY(55px);
+  transform: translateY(5%);
 }

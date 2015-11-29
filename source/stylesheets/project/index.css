@@ -20,11 +20,7 @@
 }
 
 .take-away-item h3 {
-  color: $brown;
-  font-size: 1.8em;
-  font-weight: 700;
-  line-height: 1.2;
-  margin-bottom: .5em;
+  font-size: 1.6em;
 }
 
 .take-away-item p {
