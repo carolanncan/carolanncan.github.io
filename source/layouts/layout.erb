@@ -24,10 +24,8 @@
     <title><%= current_page.data.title || "Carolann" %></title>
     <%= stylesheet_link_tag "all" %>
   </head>
-  <body id="body">
-    <div class="<%= page_classes %>">
-      <%= partial "partials/nav" %>
-      <%= yield %>
-    </div>
+  <body id="body" class="<%= page_classes %>">
+    <%= partial "partials/nav" %>
+    <%= yield %>
   </body>
 </html>

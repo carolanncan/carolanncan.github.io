@@ -1,3 +1,7 @@
+.about {
+  border: 15px solid white;
+}
+
 .about .text-wrap {
   width: 55%;
 }
@@ -13,12 +17,11 @@
 }
 
 .crop-circle {
-  background-image: url("../images/carolann.jpg");
-  background-position: center;
+  background-image: url("../images/carolann-2015.jpg");
+  background-position: 39% 10%;
   background-repeat: no-repeat;
-  background-size: 180%;
+  background-size: 174%;
   border-radius: 50%;
-  border: 2px solid white;
   margin: 0;
   overflow: hidden;
   height: 11em;
@@ -87,11 +90,15 @@
   margin: 0 1em;
 }
 
+.social-media li:first-of-type {
+  margin-left: 7px;
+}
+
 .social-media i {
   font-size: 1.6em;
   transition: all .15s ease-in-out;
 }
 
 .social-media i:hover {
-  color: $base-accent-color;
+  color: $brown;
 }
