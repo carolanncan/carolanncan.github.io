@@ -10,17 +10,21 @@
   margin: 0;
 }
 
-.project-header {
-  margin-bottom: 3.5em;
-}
-
 .take-away-item {
   margin-bottom: 2em;
   position: relative;
 }
 
 .take-away-item h3 {
-  font-size: 1.6em;
+  font-size: $base-font-size * 1.2;
+  font-weight: 700;
+}
+
+@media (max-width: 700px) {
+  .take-away-item h3 {
+    line-height: 1.2;
+    margin-bottom: .5em;
+  }
 }
 
 .take-away-item p {
@@ -30,4 +34,15 @@
 .projects footer {
   margin: 5em auto;
   width: 70%;
+}
+
+@media (max-width: 700px) {
+  .projects footer {
+    margin: 1em auto;
+    width: 80%;
+  }
+
+  .projects footer .wrap {
+    padding: 0;
+  }
 }

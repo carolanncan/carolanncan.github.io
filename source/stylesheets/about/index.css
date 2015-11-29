@@ -2,11 +2,14 @@
   width: 55%;
 }
 
-.about h6 {
-  margin: 2.5em 0 1em;
+@media (max-width: 700px) {
+  .about .text-wrap {
+    width: 100%;
+  }
 }
 
-.about h3 {
+.about h6 {
+  margin: 2.5em 0 1em;
 }
 
 .crop-circle {
@@ -28,10 +31,21 @@
 
 .favorite-things li {
   display: inline-block;
-  font-size: $base-font-size * 1.2;
   font-size: 1.1em;
   text-transform: uppercase;
   letter-spacing: 2px;
+}
+
+@media (max-width: 700px) {
+  .favorite-things li {
+    display: block;
+    border-top: 2px solid white;
+    padding: .4em 0;
+  }
+
+  .favorite-things li:last-of-type {
+    border-bottom: 2px solid white;
+  }
 }
 
 .favorite-things li:after {
@@ -42,8 +56,22 @@
   margin: 0 1.3em;
 }
 
+@media (max-width: 700px) {
+  .favorite-things li:after {
+    display: none;
+   }
+}
+
 .favorite-things li:last-of-type:after {
   content: '';
+}
+
+
+@media (max-width: 700px) {
+  .design-things h3 {
+    line-height: 1.3;
+    margin-bottom: .5em;
+  }
 }
 
 .design-things-description {

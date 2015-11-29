@@ -9,6 +9,12 @@
   justify-content: space-between;
 }
 
+@media (max-width: 700px) {
+  .work-list {
+    flex-flow: column wrap;
+  }
+}
+
 .work-list li {
   flex: 1 1 40%;
 }
@@ -19,6 +25,16 @@
   min-height: 100px;
   padding: 1.75em;
   position: relative;
+}
+
+@media (max-width: 700px) {
+  .project-link {
+    max-height: 80px;
+  }
+
+  .project-subtitle {
+    display: none;
+  }
 }
 
 .project-link {
