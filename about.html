@@ -24,75 +24,71 @@
     <title>About Me</title>
     <link href="stylesheets/all.css" media="screen" rel="stylesheet" type="text/css" />
   </head>
-  <body id="body">
-    <div class="about">
-      <nav class="wrap">
-  <ul class='nav'>
-    <li><a href="work.html">Projects</a></li>
-    <li><a href="about.html">About Me</a></li>
-    <li><a href="./">Home</a></li>
+  <body id="body" class="about">
+    <main class="wrap"><header>
+  <h1 class="page-title">About me</h1>
+  <p class="page-intro">
+    I live in San Francisco with my husband, George. I was born and raised in
+    Oklahoma. I grew up loving Bob Dylan, diversity, and other things you might
+    not expect from the midwest. I love design and I love people. I don't think
+    you can do one without the other.
+  </p>
+
+  <h6>Things I like</h6>
+  <ul class="cool-list">
+    <li>Hip-hop</li>
+    <li>Design</li>
+    <li>Science Fiction</li>
+    <li>Vim</li>
+    <li>Jokes</li>
   </ul>
-</nav>
+</header>
 
-      <div class="wrap">
-  <div class="crop-circle"></div>
-  <header class="text-wrap">
-      <h1 class="page-title">Hi, I'm Carolann.</h1>
-      <h6>A few of my favorite things</h6>
-      <ul class="favorite-things">
-        <li>Hip-hop</li>
-        <li>Design</li>
-        <li>Science Fiction</li>
-        <li>Jokes</li>
-      </ul>
-  </header>
+<section class="design-things text-wrap">
+  <h6>What I've learned about design</h6>
+  <h5>Design is a team sport.</h5>
+  <p class="design-things-description">
+    My role as a designer isn't to have all the answers but to combine my
+    expertise with the that of everyone around me.
+  </p>
+  <hr>
+  <h5>Start by asking questions.</h5>
+  <p class="design-things-description">
+    Ask "why" as many times as you have to in order to get to the root of a
+    problem or the true reason behind a decision.
+  </p>
+  <hr>
+  <h5>Communication is critical.</h5>
+  <p class="design-things-description">
+    Being able to explain the "why" behind a decision helps everyone around
+    you contribute to the design process and work together toward the same
+    goal.
+  </p>
+</section>
 
-  <section class="design-things text-wrap">
-    <h6>A few things I've learned about design</h6>
-    <h3>Design is a team sport.</h3>
-    <p class="design-things-description">
-      My role as a designer is not to have all the answers but to combine my
-      expertise with the that of everyone around me.
-    </p>
-    <hr>
-    <h3>Start by asking questions.</h3>
-    <p class="design-things-description">
-      Ask "why" as many times as you have to in order to get to the root of a
-      problem or the true reason behind a decision.
-    </p>
-    <hr>
-    <h3>Communication is critical.</h3>
-    <p class="design-things-description">
-      Being able to explain the "why" behind a decision helps everyone around
-      you contribute to the design process and work together toward the same
-      goal.
-    </p>
-  </section>
+<footer class="contact-info">
+  <blockquote class="small-txt">
+    &ldquo;Each of us is phenomenal.&rdquo; &#8212;Angelou
+  </blockquote>
 
-  <footer class="contact-info">
-    <blockquote class="small-txt">
-      &ldquo;Each of us is phenomenal.&rdquo; &#8212;Angelou
-    </blockquote>
-
-    <ul class="social-media">
-      <li>
-        <a class="social-link" network="github" href="http://github.com/carolanncan">
-          <i class='fa fa-github'></i>
-        </a>
-      </li>
-      <li>
-        <a class="social-link" network="twitter" href="http://twitter.com/carolanncan">
-          <i class="fa fa-twitter"></i>
-        </a>
-      </li>
-      <li>
-        <a class="social-link" network="dribbble" href="http://dribbble.com/carolanncan">
-          <i class='fa fa-dribbble'></i>
-        </a>
-      </li>
-    </ul>
-  </footer>
-</div>
+  <ul class="social-media">
+    <li>
+      <a class="social-link" network="github" href="http://github.com/carolanncan">
+        <i class='fa fa-github'></i>
+      </a>
+    </li>
+    <li>
+      <a class="social-link" network="twitter" href="http://twitter.com/carolanncan">
+        <i class="fa fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a class="social-link" network="dribbble" href="http://dribbble.com/carolanncan">
+        <i class='fa fa-dribbble'></i>
+      </a>
+    </li>
+  </ul>
+</footer>
 
 <script>
   var links = document.getElementsByClassName('social-link');
@@ -103,7 +99,14 @@
     };
   });
 </script>
+</main>
+    <nav class="nav wrap">
+  <ul class="cool-list">
+    <li><a href="work.html">Projects</a></li>
+    <li><a href="about.html">About Me</a></li>
+    <li><a href="./">Home</a></li>
+  </ul>
+</nav>
 
-    </div>
   </body>
 </html>
