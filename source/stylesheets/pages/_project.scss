@@ -1,30 +1,14 @@
-.projects main {
-  margin-top: 4em;
-}
-
-.projects h2 {
-  color: $blue;
+.projects header {
+  margin: 5em 0 2em;
 }
 
 .projects h6 {
-  margin: 0;
+  margin-bottom: 1em;
 }
 
-.take-away-item {
-  margin-bottom: 2em;
-  position: relative;
-}
-
-.take-away-item h3 {
-  font-size: $base-font-size * 1.2;
-  font-weight: 700;
-}
-
-@media (max-width: 700px) {
-  .take-away-item h3 {
-    line-height: 1.2;
-    margin-bottom: .5em;
-  }
+.take-away-item h4 {
+  line-height: 1.2;
+  margin-bottom: .5em;
 }
 
 .take-away-item p {
