@@ -1,6 +1,7 @@
 body {
   -webkit-font-smoothing: antialiased;
   background-color: $neutral;
+  border: 15px solid white;
   color: $base-font-color;
   font-family: $base-font-family;
   font-size: $base-font-size;
@@ -57,10 +58,6 @@ h1 {
   font-size: 3em;
 }
 
-.page-title {
-  line-height: 1.5;
-}
-
 h2 {
   font-size: 2.5em;
   line-height: 1.6;
@@ -110,7 +107,7 @@ a:focus {
 }
 
 hr {
-  background: $blue;
+  background: $base-accent-color;
   border: none;
   height: 2px;
   margin: 2em 0;
@@ -139,3 +136,14 @@ figure {
 figcaption{
   margin: 2em auto;
 }
+
+.page-title {
+  line-height: 1.5;
+}
+
+.page-intro {
+  font-size: 1.5em;
+  line-height: 1.5;
+  max-width: 750px;
+}
+

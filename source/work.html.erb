@@ -2,9 +2,11 @@
 title: Projects
 ---
 
-<h1 class="page-title">Work</h1>
-<h6>Projects I've learned the most from</h6>
-<ul class="work-list">
+<header>
+  <h1 class="page-title">Work</h1>
+  <p class="page-intro">Projects I've learned the most from</p>
+</header>
+<ul class="work-list text-wrap">
   <% data.projects.project.each_with_index do |project, index| %>
     <li>
       <% link_to "/projects/" + project.link + ".html" do %>
