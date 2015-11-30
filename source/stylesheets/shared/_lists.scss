@@ -5,7 +5,6 @@ ul, ol {
 }
 
 .nav {
-  text-align: right;
   padding-top: 2em;
 }
 
@@ -16,9 +15,38 @@ ul, ol {
   }
 }
 
-.nav li {
+.cool-list li {
   display: inline-block;
-  margin-right: 1em;
-  margin-top: 1em;
+  letter-spacing: 1px;
+  text-transform: uppercase;
   vertical-align: middle;
+}
+
+@media (max-width: 700px) {
+  .cool-list li {
+    display: block;
+    border-top: 2px solid white;
+    padding: .4em 0;
+  }
+
+  .cool-list li:last-of-type {
+    border-bottom: 2px solid white;
+  }
+}
+
+.cool-list li:after {
+  content: '/';
+  color: $light-gray;
+  display: inline-block;
+  margin: 0 1.5em;
+}
+
+@media (max-width: 700px) {
+  .cool-list li:after {
+    display: none;
+   }
+}
+
+.cool-list li:last-of-type:after {
+  content: '';
 }

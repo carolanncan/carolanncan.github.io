@@ -2,21 +2,17 @@
 title: Projects
 ---
 
-<main>
-  <div class="wrap">
-    <h1 class="page-title">Work</h1>
-    <h6>Projects I've learned the most from</h6>
-    <ul class="work-list">
-      <% data.projects.project.each_with_index do |project, index| %>
-        <li>
-          <% link_to "/projects/" + project.link + ".html" do %>
-            <div class="project-link">
-              <h2 class="project-title"><%= project.title %></h2>
-              <p class="project-subtitle text-wrap"><%= project.subtitle %></p>
-            </div>
-          <% end %>
-        </li>
+<h1 class="page-title">Work</h1>
+<h6>Projects I've learned the most from</h6>
+<ul class="work-list">
+  <% data.projects.project.each_with_index do |project, index| %>
+    <li>
+      <% link_to "/projects/" + project.link + ".html" do %>
+        <div class="project-link">
+          <h2 class="project-title"><%= project.title %></h2>
+          <p class="project-subtitle text-wrap"><%= project.subtitle %></p>
+        </div>
       <% end %>
-    </ul>
-  </div>
-</main>
+    </li>
+  <% end %>
+</ul>
