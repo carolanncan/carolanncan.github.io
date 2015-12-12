@@ -12,6 +12,8 @@ activate :google_analytics do |ga|
   ga.domain_name = 'cbnnr.in'
 end
 
+activate :directory_indexes
+
 set :css_dir, 'stylesheets'
 set :js_dir, 'javascripts'
 set :images_dir, 'images'
