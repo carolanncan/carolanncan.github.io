@@ -1,0 +1,106 @@
+---
+title: Segment Integrations
+---
+
+<header class="project-header">
+  <h1 class="page-title">Segment Integrations</h1>
+  <h2 class="page-intro">Bring more clarity to setting up new analytics tools in the Segment dashboard.</h2>
+  <!-- <h6>My contributions</h6> -->
+  <!-- <ul class="cool&#45;list"> -->
+  <!--    <li>User experience design</li> -->
+  <!--    <li>Interface design</li> -->
+  <!-- </ul> -->
+  <hr>
+
+</header>
+
+<div class="text-wrap">
+<h3>The problem</h3>
+<h6>Lack of communication and clarity</h6>
+<p>
+  Some integrations can receive data from Segment with our out-of-the-box
+  implementation. But many tools need to be instrumented in a way that requires
+  extra steps and instruction.
+</p>
+<p>
+  We were failing to surface the required extra steps in the interface, which
+  created a point of failure for our users. The lack of clarity around what
+  extra steps are necessary and which integrations required the extra steps was
+  creating a confusing and frustrating experience for customers.
+</p>
+
+<h6>Frustration in troubleshooting</h6>
+<p>
+  Users could not troubleshoot independently which created frustration for them
+  and a heavy work load for our support team.
+</p>
+
+<p>
+  Looking into the future, we'll be adding even more integrations to the
+  platform that will require a few extra steps of set up. With this in mind,
+  the process needs to be really clear. 
+</p>
+
+
+<h3>Improving broken workflows</h3>
+
+<p>
+  The previous version of the interface had a few qualities that we felt it was
+  important to retain for the user experience.
+</p>
+
+<ul>
+  <li>It looks like something that you just want to click on</li>
+  <li>It makes is seem like turning on an integration feel effortless.</li>
+  <li>It’s an interface element that a lot of people are familiar with.</li>
+</ul>
+
+<figure>
+  <img src="/images/portfolio/integrations/integrations.png">
+  <figcaption>
+    <p>
+    </p>
+  </figcaption>
+</figure>
+
+**Things that work really well about the toggle:**
+
+- It looks like something that you* want* to click on - It makes is seem like
+turning on an integration feel effortless - It’s an interface element that a
+lot of people are familiar with.
+
+
+**Things that are not working well:**
+
+- “Turning on” and “turning off” a tool is not the best mindset to put our
+customers in when they’re making the decision to start or stop sending data to
+an integration.  - We want Segment to become more of a marketplace for
+customers and partners. With the toggle, the product feels a bit more like a
+switchboard.  - The **tile **and the **toggle** are each clickable but have
+two, slightly different outcomes, which creates some confusion.
+
+
+**Why did we remove the toggle right now?**
+
+- The integrations-platform team has been working on a project (+ Platform
+Mobile and + Platform Integration Sheets Enhancements ) to make a few small
+improvements to the experience of our mobile integrations.  - The integrations
+page has a lot of known issues. In trying to work around those issues for the
+current project, it became harder to justify keeping the toggle than to remove
+it.
+
+
+**What about all of our messaging about the toggle and the “flip of a
+switch”?**
+
+- This creates work for our marketing team and anyone involved in external
+communication to update messaging about Segment.  - We think we can make a
+graceful transition away from the toggle by making incremental updates.
+
+A toggle is more commonly used for low-stakes decisions/actions. Here’s an
+example from Spotify.
+
+
+- These updates haven’t been tested on users yet. They are a quick band-aid for
+some known or obvious issues. More thorough updates are coming next!
+
