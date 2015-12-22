@@ -1,7 +1,7 @@
 project:
-  # - title: 'Segment.com'
-  #   subtitle: 'The new Segment.com'
-  #   link: 'segment-website'
+  - title: 'Segment.com'
+    subtitle: 'The new Segment.com'
+    link: 'segment-website'
   # - title: 'Segment blog'
   #   subtitle: 'Redesign of the Segment blog'
   #   link: 'segment-blog'

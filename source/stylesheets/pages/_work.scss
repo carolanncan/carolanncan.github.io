@@ -26,3 +26,19 @@
 .project-title {
   font-size: 2em;
 }
+
+.work-image {
+  box-shadow: 0px 0px 3px 1px rgba(161,161,161,.5);
+  border-radius: 4px;
+  overflow: hidden;
+  margin: 40px 0;
+}
+
+.bulleted-list {
+  list-style: disc;
+  margin-left: 20px;
+}
+
+.bulleted-list li {
+  margin-bottom: 10px;
+}
