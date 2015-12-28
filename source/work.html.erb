@@ -3,8 +3,9 @@ title: Projects
 ---
 
 <header>
-  <h1 class="page-title">Work</h1>
-  <p class="page-intro">Projects I've learned the most from</p>
+  <div class="text-wrap">
+    <h1 class="page-title">My work</h1>
+  </div>
 </header>
 <ul class="work-list text-wrap">
   <% data.projects.project.each_with_index do |project, index| %>
@@ -12,7 +13,7 @@ title: Projects
       <% link_to "/projects/" + project.link + ".html" do %>
         <div class="project-link">
           <h2 class="project-title"><%= project.title %></h2>
-          <p class="project-subtitle text-wrap"><%= project.subtitle %></p>
+          <p class="project-subtitle"><%= project.subtitle %></p>
         </div>
       <% end %>
     </li>
