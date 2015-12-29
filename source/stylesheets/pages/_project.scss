@@ -1,37 +1,24 @@
 .projects .project-title,
 .projects .project-intro {
+  line-height: 1.5;
   text-align: center;
 }
 
+.projects .project-intro {
+  font-family: $sans;
+  text-transform: uppercase;
+  font-size: .95em;
+  letter-spacing: 1px;
+}
+
 .project-header hr {
-  margin: 2em auto;
+  margin: 1em auto 3em;
 }
 
 .projects header {
   margin: 5em 0 2em;
 }
 
-.take-away-item h4 {
-  line-height: 1.2;
-  margin-bottom: .5em;
-}
-
-.take-away-item p {
-  margin-top: 0;
-}
-
-.projects footer {
-  margin: 5em auto;
-  width: 70%;
-}
-
-@media (max-width: 700px) {
-  .projects footer {
-    margin: 1em auto;
-    width: 80%;
-  }
-
-  .projects footer .wrap {
-    padding: 0;
-  }
+.projects h4 {
+  margin-top: 2em;
 }

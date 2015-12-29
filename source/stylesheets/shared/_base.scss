@@ -97,8 +97,8 @@ h6 {
 
 p {
   color: $base-font-color;
-  font-size: 1em;
-  line-height: 1.5;
+  font-size: 1.13em;
+  line-height: 1.7;
   margin: .3em 0 20px;
 }
 
@@ -134,11 +134,28 @@ img {
 }
 
 blockquote {
+  margin: 1em 0;
+  position: relative;
+}
+
+// blockquote p:before {
+//   border-left: 2px solid $base-accent-color;
+//   content: '';
+//   height: 100%;
+//   left: -20px;
+//   margin-right: 10px;
+//   position: absolute;
+// }
+
+blockquote:before {
   color: $light-gray;
-  font-weight: 700;
-  letter-spacing: 1px;
-  margin: 0 0 0 -8px;
-  text-transform: uppercase;
+  content: '\201C';
+  display: inline-block;
+  font-family: $serif;
+  font-size: 2.5rem;
+  left: -24px;
+  position: absolute;
+  top: -4px;
 }
 
 figure {
@@ -157,4 +174,8 @@ figcaption{
 .project-intro {
   font-size: 1.5em;
   line-height: 1.5;
+}
+
+.project-summary {
+  font-size: 1.5em;
 }
