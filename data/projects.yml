@@ -1,10 +1,10 @@
 project:
-  - title: 'Segment.com'
-    subtitle: 'The new Segment.com'
-    link: 'segment-website'
   - title: 'Positioning Segment'
     subtitle: 'Research & Strategy'
     link: 'segment-positioning'
+  - title: 'Segment.com'
+    subtitle: 'The new Segment.com'
+    link: 'segment-website'
   - title: 'Integrations Dashboard'
     subtitle: 'Improving the flow of enabling an integration on Segment'
     link: 'integration-page'
@@ -12,8 +12,7 @@ project:
     subtitle: 'Redesign of thoughtbot blog'
     link: 'thoughtbot-blog'
   - title: 'Laybull.it'
-    subtitle: 'Facilitating Research through Machine
-      Learning'
+    subtitle: 'Facilitating Research through Machine Learning'
     link: 'laybullit'
   - title: 'Cedar Hill'
     subtitle: 'Cedar Hill Identity Rebrand'
