@@ -7,7 +7,7 @@
 .projects .project-intro {
   font-family: $sans;
   text-transform: uppercase;
-  font-size: .95em;
+  font-size: .85em;
   letter-spacing: 1px;
 }
 
@@ -25,4 +25,8 @@
 
 .projects h6 {
   margin-bottom: 10px;
+}
+
+.projects .text-wrap {
+  margin: 0 auto;
 }
