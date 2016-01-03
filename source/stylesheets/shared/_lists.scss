@@ -21,11 +21,20 @@ ul, ol {
 
 .bulleted-list {
   list-style: disc;
+}
+
+.numbered-list {
+  list-style: decimal;
+}
+
+.bulleted-list,
+.numbered-list {
   margin-left: 20px;
 }
 
-.bulleted-list li p {
-  margin-bottom: 5px;
+.bulleted-list li p,
+.numbered-list li p {
+  margin: 0;
 }
 
 .cool-list li {
