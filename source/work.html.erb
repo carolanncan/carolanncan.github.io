@@ -17,3 +17,17 @@ title: Work
     </li>
   <% end %>
 </ul>
+
+<header>
+  <h1 class="page-title">Side projects</h1>
+</header>
+<ul class="link-list text-wrap">
+  <% data.projects.sideProject.each_with_index do |sideProject, index| %>
+    <li>
+      <% link_to sideProject.link do %>
+        <h4><%= sideProject.title %></h4>
+      <% end %>
+      <p><%= sideProject.subtitle %></p>
+    </li>
+  <% end %>
+</ul>
