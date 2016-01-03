@@ -2,14 +2,12 @@
   margin: 5em 0 1em;
 }
 
-.project-link {
-  margin-bottom: 2.5em;
-  position: relative;
-  transition: all .1s ease-in-out;
+.work h3 {
+  margin-bottom: .5em;
 }
 
 .project-link h4 {
-  line-height: 1.2;
+  line-height: 1;
 }
 
 @media (max-width: 700px) {
@@ -24,7 +22,6 @@
 
 .work-image {
   margin: 40px 0;
-  overflow: hidden;
 }
 
 .work-image-gallery {

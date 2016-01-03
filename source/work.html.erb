@@ -8,7 +8,7 @@ title: Work
 <ul class="link-list text-wrap">
   <% data.projects.project.each_with_index do |project, index| %>
     <li>
-      <% link_to "/projects/" + project.link + ".html" do %>
+      <% link_to "/projects/" + project.link do %>
         <div class="project-link">
           <h4><%= project.title %></h4>
           <p><%= project.subtitle %></p>
@@ -18,14 +18,28 @@ title: Work
   <% end %>
 </ul>
 
-<header>
-  <h1 class="page-title">Side projects</h1>
-</header>
+<h3 class="page-title">Other sites I've designed</h3>
+<ul class="link-list text-wrap">
+  <% data.projects.designed.each_with_index do |designed, index| %>
+    <li>
+      <% link_to designed.link do %>
+        <div class="project-link">
+          <h4><%= designed.title %></h4>
+        </div>
+      <% end %>
+      <p><%= designed.subtitle %></p>
+    </li>
+  <% end %>
+</ul>
+
+<h3 class="page-title">Side projects</h3>
 <ul class="link-list text-wrap">
   <% data.projects.sideProject.each_with_index do |sideProject, index| %>
     <li>
       <% link_to sideProject.link do %>
-        <h4><%= sideProject.title %></h4>
+        <div class="project-link">
+          <h4><%= sideProject.title %></h4>
+        </div>
       <% end %>
       <p><%= sideProject.subtitle %></p>
     </li>
