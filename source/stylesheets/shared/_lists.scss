@@ -15,6 +15,15 @@ ul, ol {
   }
 }
 
+.bulleted-list {
+  list-style: disc;
+  margin-left: 20px;
+}
+
+.bulleted-list li {
+  margin-bottom: 10px;
+}
+
 .cool-list li {
   display: inline-block;
   letter-spacing: 1px;
@@ -38,7 +47,7 @@ ul, ol {
   content: '/';
   color: $light-gray;
   display: inline-block;
-  margin: 0 1.5em;
+  margin: 0 1em;
 }
 
 @media (max-width: 700px) {

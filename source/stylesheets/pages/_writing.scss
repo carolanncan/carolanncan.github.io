@@ -1,0 +1,32 @@
+.writing header {
+  margin: 5em 0 1em;
+}
+
+.writing .project-title,
+.writing .project-intro {
+  line-height: 1.5;
+  text-align: center;
+}
+
+.writing .project-intro {
+  font-family: $sans;
+  text-transform: uppercase;
+  font-size: .95em;
+  letter-spacing: 1px;
+}
+
+.project-header hr {
+  margin: 1em auto 3em;
+}
+
+.writing header {
+  margin: 5em 0 2em;
+}
+
+.writing h4 {
+  margin-top: 2em;
+}
+
+.writing h6 {
+  margin-bottom: 10px;
+}

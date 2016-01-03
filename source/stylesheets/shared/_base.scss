@@ -152,10 +152,24 @@ blockquote:before {
   content: '\201C';
   display: inline-block;
   font-family: $serif;
-  font-size: 2.5rem;
-  left: -24px;
+  font-size: 1.8rem;
+  left: -18px;
   position: absolute;
-  top: -4px;
+  top: -3px;
+}
+
+cite {
+  color: $light-gray;
+  font-size: .85em;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.cite {
+  line-height: 0;
+  margin-bottom: 2em;
 }
 
 figure {

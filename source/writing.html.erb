@@ -1,0 +1,19 @@
+---
+title: Writing
+---
+
+<header>
+  <div class="text-wrap">
+    <h1 class="page-title">Writing</h1>
+  </div>
+</header>
+<ul class="text-wrap">
+  <% data.writing.writing.each_with_index do |writing, index| %>
+    <li>
+      <% link_to writing.link do %>
+        <h4><%= writing.title %></h4>
+      <% end %>
+      <p><%= writing.subtitle %></p>
+    </li>
+  <% end %>
+</ul>

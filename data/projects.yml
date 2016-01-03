@@ -1,4 +1,7 @@
 project:
+  - title: 'Jobs-to-be-done research'
+    subtitle: 'Research & Strategy'
+    link: 'segment-jbtd'
   - title: 'Positioning Segment'
     subtitle: 'Research & Strategy'
     link: 'segment-positioning'

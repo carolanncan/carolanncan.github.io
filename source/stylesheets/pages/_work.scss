@@ -3,7 +3,7 @@
 }
 
 .project-link {
-  margin-bottom: 2.2em;
+  margin-bottom: 2.5em;
   position: relative;
   transition: all .1s ease-in-out;
 }
@@ -23,9 +23,6 @@
 }
 
 .work-image {
-  border-radius: 1px;
-  border: 4px solid white;
-  box-shadow: 0px 0px 3px 1px rgba(161, 161, 161, 0.33);
   margin: 40px 0;
   overflow: hidden;
 }
@@ -39,18 +36,8 @@
 }
 
 .work-image-gallery-item {
-  border-radius: 4px;
   flex-basis: 40%;
   flex-grow: 1;
   margin: 1em 0;
   min-width: 25%;
-}
-
-.bulleted-list {
-  list-style: disc;
-  margin-left: 20px;
-}
-
-.bulleted-list li {
-  margin-bottom: 10px;
 }
