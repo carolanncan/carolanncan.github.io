@@ -12,7 +12,7 @@ writing:
     link: 'https://robots.thoughtbot.com/human-centered-type'
   - title: 'Optimizing your user interviews'
     subtitle: 'A few tips for interviewing users that I&#146;ve learned from trial and error.'
-    link: 'writing/interviews'
+    link: '/interviews'
   - title: 'Styling a Middleman Blog with Sass'
     subtitle: 'This is a walk-through for styling your own static blog from scratch.'
     link: 'https://robots.thoughtbot.com/middleman-bourbon-walkthrough'
