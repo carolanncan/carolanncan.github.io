@@ -37,7 +37,8 @@ ul, ol {
   margin: 0;
 }
 
-.cool-list li {
+.cool-list li,
+.nav-link {
   display: inline-block;
   letter-spacing: 1px;
   text-transform: uppercase;

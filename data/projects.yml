@@ -20,6 +20,7 @@ project:
   # - title: 'Zeus'
   #   subtitle: 'Measuring team workload in a friendly way!'
   #   link: 'zeus'
+
 sideProject:
   - title: 'Laybull.it'
     subtitle: 'Facilitating Research through Machine Learning'
@@ -27,9 +28,9 @@ sideProject:
   - title: 'Lettergramme'
     subtitle: 'Email me your letters, I&#146;ll type them and mail them to whomever you like!'
     link: 'http://carolanncan.github.io/lettergramme/'
-  - title: 'Already Awesome'
-    subtitle: 'A template for a landing page that is already awesome.'
-    link: 'http://carolanncan.github.io/already-awesome'
+  # - title: 'Already Awesome'
+  #   subtitle: 'A template for a landing page that is already awesome.'
+  #   link: 'http://carolanncan.github.io/already-awesome'
 
 designed:
   - title: 'Segment Blog'

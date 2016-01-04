@@ -14,6 +14,9 @@ end
 
 activate :directory_indexes
 
+page "/projects/*", :layout => "project"
+page "/writing/*", :layout => "pages"
+
 set :css_dir, 'stylesheets'
 set :js_dir, 'javascripts'
 set :images_dir, 'images'

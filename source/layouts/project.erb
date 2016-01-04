@@ -2,9 +2,10 @@
 layout: "project"
 ---
 
-<%= yield %>
-
-<footer>
-  <hr>
-  <a href="./work">Back to gallery</a>
-</footer>
+<% wrap_layout :layout do %>
+  <%= yield %>
+  <section class="text-wrap">
+    <hr>
+    <a href="/work" class="nav-link">Back to work</a>
+  </section>
+<% end %>
