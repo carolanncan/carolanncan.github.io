@@ -1,7 +1,7 @@
 writing:
   - title: 'A problem-solving model'
     subtitle: 'Outlining the problem-solving process'
-    link: 'writing/problem-solving'
+    link: '/problem-solving'
   - title: 'Using Gestalt Principles for Natural Interactions'
     subtitle:
       'Gestalt is the idea that the whole of something is more important to our
