@@ -1,7 +1,7 @@
 writing:
   - title: 'A problem-solving model'
     subtitle: 'Outlining the problem-solving process'
-    link: './problem-solving'
+    link: 'writing/problem-solving'
   - title: 'Using Gestalt Principles for Natural Interactions'
     subtitle:
       'Gestalt is the idea that the whole of something is more important to our
@@ -13,7 +13,7 @@ writing:
     link: 'https://robots.thoughtbot.com/human-centered-type'
   - title: 'Optimizing your user interviews'
     subtitle: 'A few tips for interviewing users that I&#146;ve learned from trial and error.'
-    link: './interviews'
+    link: 'writing/interviews'
   - title: 'Styling a Middleman Blog with Sass'
     subtitle: 'This is a walk-through for styling your own static blog from scratch.'
     link: 'https://robots.thoughtbot.com/middleman-bourbon-walkthrough'
