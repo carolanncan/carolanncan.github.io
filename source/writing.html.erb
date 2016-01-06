@@ -25,6 +25,8 @@ layout: "pages"
         <h4><%= speaking.title %></h4>
       <% end %>
       <p><%= speaking.subtitle %></p>
+      <h6>Presented at</h6>
+      <p><%= speaking.where %></p>
       <iframe src="<%= speaking.iframe %>" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="margin-bottom:1em;" allowfullscreen></iframe>
     </li>
   <% end %>
