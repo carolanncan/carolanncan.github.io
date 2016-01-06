@@ -1,3 +1,11 @@
+.spotify {
+  display: flex;
+  flex-flow: column;
+  height: 98.7vh;
+  justify-content: space-around;
+  padding-bottom: 0;
+}
+
 .spotify header {
   margin: 5em 0 2em;
 }
