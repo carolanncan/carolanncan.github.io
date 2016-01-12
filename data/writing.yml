@@ -3,13 +3,10 @@ writing:
     subtitle: 'Outlining the problem-solving process'
     link: '/articles/problem-solving'
   - title: 'Using Gestalt Principles for Natural Interactions'
-    subtitle:
-      'Gestalt is the idea that the whole of something is more important to our
-      understanding than the individual parts. This post got some Twitter love
-      from the Twitter design team <3'
+    subtitle: 'Gestalt and how our minds interpret visuals.'
     link: 'https://robots.thoughtbot.com/gestalt-principles'
   - title: 'Human-centered typography'
-    subtitle: 'The fundamental goal of typography is to make text easy and enjoyable to read.'
+    subtitle: 'Text as an interface.'
     link: 'https://robots.thoughtbot.com/human-centered-type'
   - title: 'Optimizing your user interviews'
     subtitle: 'A few tips for interviewing users that I&#146;ve learned from trial and error.'

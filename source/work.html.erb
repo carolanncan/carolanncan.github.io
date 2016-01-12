@@ -4,8 +4,22 @@ layout: "landing-pages"
 ---
 
 <header>
-<h3 class="page-title">Recent work</h3>
+  <h3 class="page-title">Sites I've designed and built</h3>
 </header>
+<ul class="link-list">
+  <% data.projects.designed.each_with_index do |designed, index| %>
+    <li>
+      <% link_to designed.link, :target => "_blank" do %>
+        <div class="project-link">
+          <h4 class="project-link-title"><%= designed.title %></h4>
+        </div>
+      <% end %>
+      <!-- <p><%= designed.subtitle %></p> -->
+    </li>
+  <% end %>
+</ul>
+
+<h3 class="page-title">Recent work</h3>
 <ul class="link-list">
   <% data.projects.project.each_with_index do |project, index| %>
     <li>
@@ -15,20 +29,6 @@ layout: "landing-pages"
           <!-- <p><%= project.subtitle %></p> -->
         </div>
       <% end %>
-    </li>
-  <% end %>
-</ul>
-
-<h3 class="page-title">Sites I've designed and built</h3>
-<ul class="link-list">
-  <% data.projects.designed.each_with_index do |designed, index| %>
-    <li>
-      <% link_to designed.link do %>
-        <div class="project-link">
-          <h4 class="project-link-title"><%= designed.title %></h4>
-        </div>
-      <% end %>
-      <!-- <p><%= designed.subtitle %></p> -->
     </li>
   <% end %>
 </ul>

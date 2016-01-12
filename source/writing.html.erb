@@ -1,35 +1,37 @@
 ---
-title: Writing & Speaking
+title: Writing
 layout: "pages"
 ---
 
-<main class="wrap">
 <header>
   <h1 class="page-title">Writing & Speaking</h1>
 </header>
 
-<ul class="link-list text-wrap">
+<ul class="link-list">
   <% data.writing.writing.each_with_index do |writing, index| %>
     <li>
       <% link_to writing.link do %>
-        <h4><%= writing.title %></h4>
+        <div class="project-link">
+          <h4 class="project-link-title"><%= writing.title %></h4>
+          <p><%= writing.subtitle %></p>
+        </div>
       <% end %>
-      <p><%= writing.subtitle %></p>
     </li>
   <% end %>
 </ul>
 
-<ul class="link-list text-wrap">
+<ul class="link-list">
   <% data.speaking.speaking.each_with_index do |speaking, index| %>
     <li>
       <% link_to speaking.link do %>
-        <h4><%= speaking.title %></h4>
+        <div class="project-link presentations">
+          <h4 class="project-link-title"><%= speaking.title %></h4>
+          <p><%= speaking.subtitle %></p>
       <% end %>
-      <p><%= speaking.subtitle %></p>
       <h6>Presented at</h6>
-      <p><%= speaking.where %></p>
-      <iframe src="<%= speaking.iframe %>" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="margin-bottom:1em;" allowfullscreen></iframe>
+      <p class="project-link-sublink"><%= speaking.where %></p>
+      <!-- <iframe src="<%= speaking.iframe %>" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="margin&#45;bottom:1em;" allowfullscreen></iframe> -->
+      </div>
     </li>
   <% end %>
 </ul>
-</main>
