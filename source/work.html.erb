@@ -1,19 +1,30 @@
 ---
 title: Work
-layout: "pages"
+layout: "landing-pages"
 ---
 
+<header><h3 class="page-title">Sites I've designed and built</h3></header>
+<ul class="link-list text-wrap">
+  <% data.projects.designed.each_with_index do |designed, index| %>
+    <li>
+      <% link_to designed.link do %>
+        <div class="project-link">
+          <h4><%= designed.title %></h4>
+        </div>
+      <% end %>
+      <!-- <p><%= designed.subtitle %></p> -->
+    </li>
+  <% end %>
+</ul>
 
-<header>
-<h1 class="page-title">Process</h1>
-</header>
+<h3 class="page-title">Process</h3>
 <ul class="link-list text-wrap">
   <% data.projects.project.each_with_index do |project, index| %>
     <li>
       <% link_to "/projects/" + project.link do %>
         <div class="project-link">
           <h4><%= project.title %></h4>
-          <p><%= project.subtitle %></p>
+          <!-- <p><%= project.subtitle %></p> -->
         </div>
       <% end %>
     </li>
@@ -30,21 +41,6 @@ layout: "pages"
         </div>
       <% end %>
       <p><%= sideProject.subtitle %></p>
-    </li>
-  <% end %>
-</ul>
-
-
-<h3 class="page-title">Live sites</h3>
-<ul class="link-list text-wrap">
-  <% data.projects.designed.each_with_index do |designed, index| %>
-    <li>
-      <% link_to designed.link do %>
-        <div class="project-link">
-          <h4><%= designed.title %></h4>
-        </div>
-      <% end %>
-      <p><%= designed.subtitle %></p>
     </li>
   <% end %>
 </ul>

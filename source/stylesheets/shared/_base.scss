@@ -181,3 +181,14 @@ figcaption{
 .project-summary {
   font-size: 1.5em;
 }
+
+.header-image {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  height: 500px;
+  width: 100%;
+  border-bottom: 1px solid $base-border-color;
+  margin-bottom: 60px;
+}
