@@ -1,6 +1,6 @@
 project:
   - title: 'Redesigning Segment&#146;s website'
-    subtitle: 'Redesigning Segment&#146;s home page'
+    subtitle: 'Redesigning Segment&#146;s website'
     link: 'segment-website'
   - title: 'Redesigning user onboarding at Segment'
     subtitle: 'Redesigning user onboarding at Segment'
@@ -34,15 +34,11 @@ sideProject:
   #   link: 'http://carolanncan.github.io/already-awesome'
 
 designed:
-  - title: 'Segment home page'
-    subtitle: 'Designed and built'
+  - title: 'Segment marketing site'
     link: 'https://segment.com'
   - title: 'Segment Blog'
-    subtitle: 'Designed and built'
     link: 'https://segment.com/blog/'
   - title: 'Analytics Academy'
-    subtitle: 'Designed and built (icons from outside source).'
     link: 'https://segment.com/academy/'
   - title: 'Giant Robots'
-    subtitle: 'Designed and built'
     link: 'https://robots.thoughtbot.com/'

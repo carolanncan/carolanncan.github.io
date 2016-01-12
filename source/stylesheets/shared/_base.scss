@@ -1,7 +1,8 @@
 body {
   -webkit-font-smoothing: antialiased;
-  background-color: $neutral;
-  border: 5px solid white;
+  // background-color: $neutral;
+  background-color: white;
+  border: 9px solid $neutral;
   color: $base-font-color;
   font-family: $base-font-family;
   font-size: $base-font-size;
@@ -169,19 +170,6 @@ figcaption{
   margin: 2em auto;
 }
 
-.project-title {
-  line-height: 1.5;
-}
-
-.project-intro {
-  font-size: 1.5em;
-  line-height: 1.5;
-}
-
-.project-summary {
-  font-size: 1.5em;
-}
-
 .header-image {
   background-position: center;
   background-repeat: no-repeat;
@@ -189,6 +177,6 @@ figcaption{
   display: block;
   height: 500px;
   width: 100%;
-  border-bottom: 1px solid $base-border-color;
+  border-bottom: 1px solid rgba(171, 168, 160, 0.23);
   margin-bottom: 60px;
 }

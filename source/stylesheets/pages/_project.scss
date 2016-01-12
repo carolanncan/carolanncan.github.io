@@ -1,3 +1,7 @@
+.projects .nav {
+  text-align: center;
+}
+
 .projects .project-title,
 .projects .project-intro {
   line-height: 1.5;
@@ -16,7 +20,7 @@
 }
 
 .projects header {
-  // margin: 5em 0 2em;
+  margin: 5em 0 2em;
 }
 
 .projects h4 {
@@ -30,3 +34,37 @@
 .projects .text-wrap {
   margin: 0 auto;
 }
+
+.project-link {
+  background: $neutral;
+  padding: 30px;
+  height: 200px;
+}
+
+.project-link h4 {
+  line-height: 1.3;
+}
+
+.project-link:hover {
+  background-color: $blue;
+  transition: all .2s linear;
+}
+
+.project-link:hover .project-link-title {
+  color: white;
+}
+
+.project-link-title {
+  font-family: $sans;
+  font-size: 21px;
+}
+
+.project-intro {
+  font-size: 1.5em;
+  line-height: 1.5;
+}
+
+.project-summary {
+  font-size: 1.5em;
+}
+

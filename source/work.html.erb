@@ -3,27 +3,15 @@ title: Work
 layout: "landing-pages"
 ---
 
-<header><h3 class="page-title">Sites I've designed and built</h3></header>
-<ul class="link-list text-wrap">
-  <% data.projects.designed.each_with_index do |designed, index| %>
-    <li>
-      <% link_to designed.link do %>
-        <div class="project-link">
-          <h4><%= designed.title %></h4>
-        </div>
-      <% end %>
-      <!-- <p><%= designed.subtitle %></p> -->
-    </li>
-  <% end %>
-</ul>
-
-<h3 class="page-title">Process</h3>
-<ul class="link-list text-wrap">
+<header>
+<h3 class="page-title">Recent work</h3>
+</header>
+<ul class="link-list">
   <% data.projects.project.each_with_index do |project, index| %>
     <li>
       <% link_to "/projects/" + project.link do %>
         <div class="project-link">
-          <h4><%= project.title %></h4>
+          <h4 class="project-link-title"><%= project.title %></h4>
           <!-- <p><%= project.subtitle %></p> -->
         </div>
       <% end %>
@@ -31,16 +19,30 @@ layout: "landing-pages"
   <% end %>
 </ul>
 
-<h3 class="page-title">Projects</h3>
-<ul class="link-list text-wrap">
+<h3 class="page-title">Sites I've designed and built</h3>
+<ul class="link-list">
+  <% data.projects.designed.each_with_index do |designed, index| %>
+    <li>
+      <% link_to designed.link do %>
+        <div class="project-link">
+          <h4 class="project-link-title"><%= designed.title %></h4>
+        </div>
+      <% end %>
+      <!-- <p><%= designed.subtitle %></p> -->
+    </li>
+  <% end %>
+</ul>
+
+<h3 class="page-title">Side projects</h3>
+<ul class="link-list">
   <% data.projects.sideProject.each_with_index do |sideProject, index| %>
     <li>
       <% link_to sideProject.link do %>
         <div class="project-link">
-          <h4><%= sideProject.title %></h4>
+          <h4 class="project-link-title"><%= sideProject.title %></h4>
+          <p><%= sideProject.subtitle %></p>
         </div>
       <% end %>
-      <p><%= sideProject.subtitle %></p>
     </li>
   <% end %>
 </ul>
