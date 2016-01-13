@@ -11,10 +11,11 @@ layout: "pages"
   <% data.writing.writing.each_with_index do |writing, index| %>
     <li>
       <% link_to writing.link do %>
-        <div class="project-link">
+        <div class="project-link neutral">
+          <div class="writing-thumbnail" style="background-image: url('/images/writing/<%= writing.image %>'); background-size:<%= writing.backgroundSize %>"></div>
+          </div>
           <h4 class="project-link-title"><%= writing.title %></h4>
           <p><%= writing.subtitle %></p>
-        </div>
       <% end %>
     </li>
   <% end %>
@@ -24,13 +25,13 @@ layout: "pages"
   <% data.speaking.speaking.each_with_index do |speaking, index| %>
     <li>
       <% link_to speaking.link do %>
-        <div class="project-link presentations">
+        <div class="presentations">
+          <iframe src="<%= speaking.iframe %>" width="375" height="300" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="margin-bottom:1em;" allowfullscreen></iframe>
           <h4 class="project-link-title"><%= speaking.title %></h4>
           <p><%= speaking.subtitle %></p>
       <% end %>
       <h6>Presented at</h6>
-      <p class="project-link-sublink"><%= speaking.where %></p>
-      <!-- <iframe src="<%= speaking.iframe %>" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="margin&#45;bottom:1em;" allowfullscreen></iframe> -->
+      <p><%= speaking.where %></p>
       </div>
     </li>
   <% end %>
