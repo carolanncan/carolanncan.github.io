@@ -64,12 +64,11 @@
 }
 
 .project-thumbnail {
-  background-position: center 2em;
+  background-position: bottom right;
 }
 
 .project-link:hover .project-thumbnail {
   opacity: 1;
-  background-position: center 2.3em;
 }
 
 .project-link:hover .writing-thumbnail {

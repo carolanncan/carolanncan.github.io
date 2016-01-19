@@ -1,8 +1,7 @@
 project:
   - title: 'Redesigning Segment&#146;s website'
     link: 'segment-website'
-    image: 'segment-site-browser-only.png'
-    backgroundSize: '90%'
+    image: 'segment-site.png'
   - title: 'User onboarding at Segment'
     link: 'segment-setup'
     image: 'segment-setup.png'
