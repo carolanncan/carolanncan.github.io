@@ -1,0 +1,32 @@
+.nav {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  padding: 3em 0;
+}
+
+.nav-link {
+  display: inline-block;
+  letter-spacing: 1px;
+  line-height: 2.4;
+  margin-right: 15px;
+  position: relative;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+
+.site-header {
+  flex-basis: 35%;
+}
+
+.site-title {
+  font-size: 1.2em;
+  font-family: $sans;
+  font-weight: 600;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.site-description {
+  display: none;
+}

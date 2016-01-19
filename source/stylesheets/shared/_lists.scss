@@ -4,17 +4,6 @@ ul, ol {
   list-style-type: none;
 }
 
-.nav {
-  padding: 3em 0 1em;
-}
-
-@media (max-width: 700px) {
-  .nav {
-    text-align: left;
-    padding-top: 0;
-  }
-}
-
 .link-list {
   display: flex;
   flex-flow: row;
@@ -23,7 +12,7 @@ ul, ol {
 }
 
 .link-list li {
-  flex-basis: 24%;
+  flex-basis: 35%;
   flex-grow: 1;
   margin-right: 20px;
   margin-bottom: 20px;
@@ -31,6 +20,10 @@ ul, ol {
 
 .bulleted-list {
   list-style: disc;
+}
+
+.bulleted-list li {
+  margin-bottom: 1em;
 }
 
 .numbered-list {
@@ -47,8 +40,7 @@ ul, ol {
   margin: 0;
 }
 
-.cool-list li,
-.nav-link {
+.cool-list li {
   display: inline-block;
   letter-spacing: 1px;
   text-transform: uppercase;

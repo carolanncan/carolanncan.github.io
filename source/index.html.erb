@@ -3,9 +3,38 @@ title: Home
 layout: "landing-pages"
 ---
 
-<div class="crop-circle"></div>
-<h1 class="site-title">Hi, I'm Carolann</h1>
-<p class="site-description text-wrap">
-  Serious designing, serious drawing, serious thinking, I'm pretty serious
-  everything.
-</p>
+<ul class="link-list">
+  <% data.projects.project.each_with_index do |project, index| %>
+    <li>
+      <% link_to "/projects/" + project.link do %>
+        <div class="project-link green-gray">
+          <div class="project-thumbnail" style="background-image: url('/images/thumbnails/<%= project.image %>'); background-size:<%= project.backgroundSize %>"></div>
+        </div>
+      <% end %>
+    </li>
+  <% end %>
+</ul>
+
+<ul class="link-list">
+  <% data.projects.designed.each_with_index do |designed, index| %>
+    <li>
+      <% link_to designed.link, :target => "_blank" do %>
+        <div class="project-link brown-gray">
+          <div class="project-thumbnail" style="background-image: url('/images/thumbnails/<%= designed.image %>'); background-size:<%= designed.backgroundSize %>;"></div>
+        </div>
+      <% end %>
+    </li>
+  <% end %>
+</ul>
+
+<ul class="link-list">
+  <% data.projects.sideProject.each_with_index do |sideProject, index| %>
+    <li>
+      <% link_to sideProject.link do %>
+        <div class="project-link green-gray">
+          <div class="project-thumbnail" style="background-image: url('/images/thumbnails/<%= sideProject.image %>'); background-size:<%= sideProject.backgroundSize %>"></div>
+        </div>
+      <% end %>
+    </li>
+  <% end %>
+</ul>

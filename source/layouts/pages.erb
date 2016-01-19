@@ -4,5 +4,7 @@ layout: "pages"
 
 <% wrap_layout :layout do %>
   <%= partial "partials/nav" %>
-  <%= yield %>
+  <main class="wrap">
+    <%= yield %>
+  </main>
 <% end %>

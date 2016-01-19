@@ -4,10 +4,12 @@ layout: "project"
 
 <% wrap_layout :layout do %>
   <%= partial "partials/nav" %>
+  <section class="wrap">
     <%= yield %>
-    <section class="text-wrap">
-      <hr>
-      <a href="/work" class="nav-link">Back to work</a>
-    </section>
+  </section>
+  <section class="text-wrap">
+    <hr>
+    <a href="/work" class="nav-link">Back to work</a>
+  </section>
   </main>
 <% end %>

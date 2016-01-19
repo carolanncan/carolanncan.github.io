@@ -1,29 +1,29 @@
-.projects .nav {
-  text-align: center;
+.project-header {
+  display: flex;
+  flex-flow: row;
+  margin: 2em 0;
 }
 
-.projects .project-title,
-.projects .project-intro {
+.project-title {
+  flex-basis: 50%;
+  line-height: 1.2;
+  margin-right: 2em;
+}
+
+.project-intro {
+  font-size: 1.4em;
   line-height: 1.5;
-  text-align: center;
 }
 
-.projects .project-intro {
-  font-family: $sans;
-  text-transform: uppercase;
-  font-size: .85em;
-  letter-spacing: 1px;
+.project-intro {
+  flex: 1;
 }
 
 .project-header hr {
   margin: 1em auto 3em;
 }
 
-.projects header {
-  margin: 5em 0 2em;
-}
-
-.projects h4 {
+.projects h3 {
   margin-top: 2em;
 }
 
@@ -31,12 +31,9 @@
   margin-bottom: 10px;
 }
 
-.projects .text-wrap {
-  margin: 0 auto;
-}
-
 .project-link {
-  height: 150px;
+  min-height: 300px;
+  max-height: 500px;
   margin-bottom: 1em;
   padding: 30px;
   position: relative;
@@ -124,14 +121,5 @@
   width: 17px;
   height: 17px;
   margin-left: 2px;
-}
-
-.project-intro {
-  font-size: 1.5em;
-  line-height: 1.5;
-}
-
-.project-summary {
-  font-size: 1.5em;
 }
 
