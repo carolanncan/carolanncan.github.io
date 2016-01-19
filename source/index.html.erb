@@ -8,7 +8,9 @@ layout: "landing-pages"
     <li>
       <% link_to "/projects/" + project.link do %>
         <div class="project-link green-gray">
-          <div class="project-thumbnail" style="background-image: url('/images/thumbnails/<%= project.image %>'); background-size:<%= project.backgroundSize %>"></div>
+          <div class="project-thumbnail" style="background-image: url('/images/thumbnails/<%= project.image %>'); background-size:<%= project.backgroundSize %>">
+            <p class="project-name"><%= project.title %></p>
+          </div>
         </div>
       <% end %>
     </li>
@@ -20,7 +22,9 @@ layout: "landing-pages"
     <li>
       <% link_to designed.link, :target => "_blank" do %>
         <div class="project-link brown-gray">
-          <div class="project-thumbnail" style="background-image: url('/images/thumbnails/<%= designed.image %>'); background-size:<%= designed.backgroundSize %>;"></div>
+          <div class="project-thumbnail" style="background-image: url('/images/thumbnails/<%= designed.image %>'); background-size:<%= designed.backgroundSize %>;">
+            <p class="project-name"><%= designed.title %></p>
+          </div>
         </div>
       <% end %>
     </li>
@@ -32,7 +36,9 @@ layout: "landing-pages"
     <li>
       <% link_to sideProject.link do %>
         <div class="project-link green-gray">
-          <div class="project-thumbnail" style="background-image: url('/images/thumbnails/<%= sideProject.image %>'); background-size:<%= sideProject.backgroundSize %>"></div>
+          <div class="project-thumbnail" style="background-image: url('/images/thumbnails/<%= sideProject.image %>'); background-size:<%= sideProject.backgroundSize %>">
+            <p class="project-name"><%= sideProject.title %></p>
+          </div>
         </div>
       <% end %>
     </li>
